@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShareActivity">
+    <group>
+        <item
+            android:id="@+id/share_menu_send"
+            android:orderInCategory="80"
+            app:showAsAction="always"
+            android:title="@string/send_share" />
+    </group>
+
+
+</menu>

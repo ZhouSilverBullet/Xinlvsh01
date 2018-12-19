@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sport_step"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:textSize="10dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <com.huichenghe.xinlvshuju.CustomView.HistogramImageViewForWeekSleepTrend
+        android:id="@+id/week_histogram_item"
+        android:layout_width="28dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sport_step"
+        android:layout_above="@+id/sport_date"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/sport_date"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textSize="10dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

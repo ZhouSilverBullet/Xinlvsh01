@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+    android:id="@+id/kuai_men_icon"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:src="@mipmap/kuaimen"
+    android:layout_centerInParent="true"
+    android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/focus_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/video_focus"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/take_photo_now"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/kuaimen_little_pressed"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+
+    <ImageView
+        android:id="@+id/preview_picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/photo_preview"
+        android:background="@drawable/background_selector"/>
+
+    <ImageView
+        android:id="@+id/preview_change"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"
+        android:src="@mipmap/record_camera_switch_normal"/>
+
+    <TextView
+        android:id="@+id/cancle_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancle"
+        android:textColor="@color/White_forme"
+        android:padding="16dp"/>
+</RelativeLayout>

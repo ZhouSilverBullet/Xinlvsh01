@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/regist_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White_forme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/White_forme"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_to_befor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon_new"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regist_to_login"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_middle"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_color_dark"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/regist_icon"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_margin="60dp"/>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@mipmap/account_icon"-->
+                        <!--android:paddingLeft="16dp"/>-->
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:text="@string/account_text"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_small_14"/>
+
+                    <EditText
+                        android:id="@+id/edit_account"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:hint="@string/error_invalid_email"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_small_14"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/black_color"
+                        android:digits="abcdefjhigklmnopqrstuvwxyzABCDEFJHIGKLMNOPQRSTUVWXYZ_0987654321"
+                        android:background="@drawable/shape_for_regist_layout"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/account_enter_state"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/star_input"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:text="@string/password"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_small_14"/>
+                    <EditText
+                        android:id="@+id/edit_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:hint="@string/error_invalid_password"
+                        android:padding="10dp"
+                        android:textSize="@dimen/text_size_small_14"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black_color"
+                        android:background="@drawable/shape_for_regist_layout"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/pwd_enter_state"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/star_input"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:text="@string/confirm_pwd_regist"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_small_14"/>
+                    <EditText
+                        android:id="@+id/edit_pwd_confirme_regist"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:hint="@string/error_invalid_password"
+                        android:padding="10dp"
+                        android:textSize="@dimen/text_size_small_14"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black_color"
+                        android:background="@drawable/shape_for_regist_layout"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/star_input"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@mipmap/email_icon"-->
+                        <!--android:paddingLeft="16dp"/>-->
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:text="@string/new_user_email"/>
+
+                    <EditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:hint="@string/enter_available_email"
+                        android:padding="10dp"
+                        android:textSize="@dimen/text_size_small_14"
+                        android:imeOptions="actionDone"
+                        android:imeActionId="@+id/toNext"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/shape_for_regist_layout"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/email_enter_state"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/star_input"/>
+            </LinearLayout>
+
+         </LinearLayout>
+
+            <Button
+                android:id="@+id/next_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="@string/next_step"
+                android:textStyle="bold"
+                android:background="@drawable/shape_for_button"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_title_one_q"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_one"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <!--android:text="@string/title_one"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="@string/title_two"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_title_q"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xiaohao"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+        android:text="@string/title_three"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#242424"
+            />
+        <!--android:text="@string/title_three"-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ed_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <EditText
+            android:id="@+id/short_blood_q"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+        android:hint="@string/diastolic_blood_pressure"
+            android:gravity="center"
+            android:background="@drawable/button_sy"
+            android:numeric="integer"
+            />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="0.5dp"
+            android:background="#242424"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <EditText
+            android:id="@+id/height_ed_q"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+
+        android:hint="@string/systolic_pressure"
+            android:gravity="center"
+            android:background="@drawable/button_sy"
+            android:layout_marginLeft="20dp"
+            android:numeric="integer"
+
+            />
+        <!--android:hint="@string/systolic_pressure"-->
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="@string/title_four"
+        />
+    <!--android:text="@string/title_four"-->
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="@string/title_five"
+        android:textColor="#FF1E1E"
+        android:layout_gravity="center"
+        />
+    <!--android:text="อินเตอร์เฟซที่รายละเอียดในการปรับเปลี่ยนพื้นฐานค่าความดันโลหิต"-->
+    <!--android:text="@string/title_five"-->
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#242424"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/true_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:text="@string/affirm"
+            android:layout_weight="1"
+            android:textColor="#FF1E1E"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#242424"
+            android:layout_height="match_parent">
+
+        </View>
+        <Button
+            android:id="@+id/false_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:text="@string/cancel"
+            android:layout_weight="1"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#242424"
+        android:layout_height="1dp">
+
+    </View>
+</LinearLayout>

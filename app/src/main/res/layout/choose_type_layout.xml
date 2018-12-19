@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White_forme">
+
+    <RelativeLayout
+        android:id="@+id/head_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/White_forme">
+
+        <ImageView
+            android:id="@+id/back_to_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon_new"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/hint_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_test_modle"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/black_color"
+            android:layout_centerInParent="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/layout_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <Button
+                android:id="@+id/select_the_modle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/be_true"
+                android:textColor="@color/White_forme"
+                android:textSize="@dimen/text_size_middle"
+                android:background="@drawable/shape_for_button"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

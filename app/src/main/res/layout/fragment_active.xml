@@ -1,0 +1,56 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/refresh_data_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@mipmap/active_fragment_background"
+    tools:context="com.huichenghe.xinlvshuju.mainpack.active_Fragment">
+
+    <com.huichenghe.xinlvshuju.CustomView.StepProgressView
+        android:id="@+id/active_progress"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:progress_width="16dp"
+        app:progress_background="@color/active_progress_background"
+        app:active_step_img="@mipmap/active_steps"
+        app:solid_color="@color/active_progress_solid"
+        app:progress_color="@color/active_progress_color"
+        app:text_color="@color/White_forme"
+        app:posint_img="@mipmap/pointer_active"/>
+
+    <TextView
+        android:id="@+id/target_show_and_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/target_new_icon"
+        android:layout_below="@id/active_progress"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="8dp"
+        android:text="1200"
+        android:textColor="@color/black_color"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="18dp"
+        android:background="@drawable/shape_target_circle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/active_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target_show_and_setting"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

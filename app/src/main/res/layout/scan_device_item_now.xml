@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <TextView
+        android:id="@+id/device_name_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HRW-555555500000"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="@dimen/text_size_middle"
+        android:drawableRight="@mipmap/enter_icon_white"
+        android:background="@drawable/ripple_shape_for_item"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/grey_color_dark"
+        android:layout_below="@id/device_name_show"/>
+
+
+</RelativeLayout>

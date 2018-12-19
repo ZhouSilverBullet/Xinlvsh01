@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    tools:context="com.huichenghe.xinlvshuju.mainpack.Movement_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/movement_online"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/movement_background">
+
+        <com.huichenghe.xinlvshuju.CustomView.Custom_movement_progress
+            android:id="@+id/progress_movement"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            app:circle_background_movement="@color/movement_circle_background"
+            app:progress_background_movement="@color/movement_progress_color"
+            app:progress_width_movement="11dp"/>
+
+        <LinearLayout
+            android:id="@+id/star_movement_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="98dp"
+            android:layout_centerHorizontal="true">
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/start_movement_icon"/>-->
+            <TextView
+                android:id="@+id/start_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/begin_com"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_small_add"
+                android:drawableTop="@mipmap/start_movement_icon"/>
+
+            <TextView
+                android:id="@+id/select_movement_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/target_new_icon"
+                android:drawablePadding="8dp"
+                android:background="@drawable/shape_target_circle"
+                android:text="3h"
+                android:layout_marginTop="12dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/end_movement_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="98dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true">
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/start_movement_icon"/>-->
+            <TextView
+                android:id="@+id/keep_move_time_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/begin_com"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/text_size_middle"/>
+
+            <CheckBox
+                android:id="@+id/pause_or_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/pause_movement_selector"/>
+
+            <TextView
+                android:id="@+id/end_movement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_target_circle_red"
+                android:text="end"
+                android:textColor="@color/danger_color"
+                android:layout_marginTop="16dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/steps_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/movement_step_icon"
+                    android:drawablePadding="3dp"
+                    android:text="0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/steps_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/steps_show"
+                    android:textSize="@dimen/text_size_small_add"
+                    android:text="steps"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/kcal_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/movement_kcal_icon"
+                    android:drawablePadding="3dp"
+                    android:text="0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/kcal_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/kcal_show"
+                    android:textSize="@dimen/text_size_small_add"
+                    android:text="kcal"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/hear_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/movement_heart_icon"
+                    android:drawablePadding="3dp"
+                    android:text="0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/hear_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/hear_show"
+                    android:textSize="@dimen/text_size_small_add"
+                    android:text="bpm"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/movement_online"
+        android:background="@color/gray_color"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_listview_for_movement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White_forme"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

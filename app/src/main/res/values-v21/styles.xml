@@ -1,0 +1,12 @@
+<resources>>
+
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+
+    <!--&lt;!&ndash; Customize your theme here. 自定义您的主题在这里&ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/main_background</item>-->
+    <!--<item name="colorPrimaryDark">@color/main_background</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--<item name="android:navigationBarColor">@color/sliding_background</item>-->
+    <!--</style>-->
+</resources>

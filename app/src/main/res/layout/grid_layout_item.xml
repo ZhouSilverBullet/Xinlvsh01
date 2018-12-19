@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/active_grid_item_shape">
+
+    <ImageView
+        android:id="@+id/icon_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/active_heart"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/acitve_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aaaaaaa"
+        android:paddingStart="8dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:paddingEnd="8dp"
+        android:singleLine="true"
+        android:layout_toEndOf="@id/icon_item"
+        android:textColor="@color/black_color"
+        android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/unit_item_nomale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bpm"
+            android:textSize="@dimen/text_size_small_add"
+            android:textColor="@color/black_color"
+            android:layout_marginTop="36dp"
+            android:layout_toEndOf="@id/acitve_item_tv"/>
+        <TextView
+            android:id="@+id/unit_item_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bpm"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:textColor="@color/black_color"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_toEndOf="@id/unit_item_nomale"/>
+        <TextView
+            android:id="@+id/unit_item_m_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bpm"
+            android:paddingStart="8dp"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_small_add"
+            android:textColor="@color/black_color"
+            android:layout_marginTop="36dp"
+            android:layout_toEndOf="@id/unit_item_m"/>
+
+    </RelativeLayout>
+</RelativeLayout>

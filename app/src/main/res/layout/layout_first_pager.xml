@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White_forme"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+<!--android:fitsSystemWindows="true"-->
+    <!--android:clipToPadding="true"-->
+
+    <!--<include layout="@layout/content_scrolling"/>-->
+    <RelativeLayout
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48.5dp"
+        android:orientation="horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout_for_main"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/day_data_privios"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/provios"
+            android:padding="12dp"
+            android:layout_toLeftOf="@+id/today_acitve"/>
+
+
+        <ImageView
+            android:id="@+id/day_data_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/next"
+            android:padding="12dp"
+            android:layout_toRightOf="@+id/today_acitve"/>
+        <TextView
+            android:id="@+id/today_acitve"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_small"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="?attr/actionBarSize" />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/connect_state_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:background="@color/attion_item_background"
+            android:textColor="@color/black_color"
+            android:layout_below="@id/toolbar_layout_for_main"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/White_forme"
+        android:layout_below="@id/toolbar_layout_for_main"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_color"
+        android:layout_above="@+id/bottom_radio_group"/>
+
+
+    <RadioGroup
+        android:id="@+id/bottom_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/White_forme">
+
+        <RadioButton
+            android:id="@+id/active_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/active_button_selector"
+            android:paddingBottom="8dp"
+            />
+        <RadioButton
+            android:id="@+id/movement_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/movement_button_selector"
+            android:paddingBottom="8dp"
+            />
+        <RadioButton
+            android:id="@+id/sleep_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/sleep_button_selector"
+            android:paddingBottom="8dp"
+            />
+        <RadioButton
+            android:id="@+id/blood_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/blood_button_selector"
+            android:paddingBottom="8dp"
+            />
+    </RadioGroup>
+
+
+
+</RelativeLayout>

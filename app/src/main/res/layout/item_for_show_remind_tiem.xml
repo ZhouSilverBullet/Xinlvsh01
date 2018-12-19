@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.huichenghe.xinlvshuju.CustomView.RemoveView
+        android:id="@+id/scroll_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rightwidth="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <TextView
+                    android:id="@+id/time_in_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="17:50"
+                    android:gravity="center"
+                    android:layout_marginEnd="32dp"
+                    android:textSize="@dimen/text_size_small"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/delete_this_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_light">
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_delete"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.huichenghe.xinlvshuju.CustomView.RemoveView>
+
+    <View
+        android:layout_below="@id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_color_dark"/>
+
+</RelativeLayout>

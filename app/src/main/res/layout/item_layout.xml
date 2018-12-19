@@ -1,0 +1,41 @@
+<com.huichenghe.xinlvshuju.views.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@null"
+    swipe:contentViewId="@+id/content_view"
+    swipe:rightViewId="@+id/tv_dele">
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@null">
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true" />
+        <!---->
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#FFF"
+        android:background="#dc3b3b"
+        android:gravity="center"
+        android:id="@+id/tv_dele"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="删除" />
+</com.huichenghe.xinlvshuju.views.SwipeMenuLayout>

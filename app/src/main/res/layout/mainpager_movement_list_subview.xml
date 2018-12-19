@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/step_layout_sub"
+    android:layout_width="100dp"
+    android:layout_height="72dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/right_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/step_item_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/movement_step_icon_white"/>
+
+        <TextView
+            android:id="@+id/movement_step_count_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/White_forme"
+            android:layout_toRightOf="@id/step_item_sub"
+            />
+
+        <TextView
+            android:id="@+id/steps_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/step_simple_one"
+            android:textColor="@color/White_forme"
+            android:textSize="10sp"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@id/step_item_sub"
+            android:layout_below="@id/movement_step_count_main"/>
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="30dp"
+        android:background="@color/White_forme"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
+
+
+
+

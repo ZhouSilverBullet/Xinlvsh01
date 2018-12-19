@@ -1,0 +1,133 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slide.settinga.RingFragment"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <RelativeLayout
+        android:id="@+id/switch_the_ring_button_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground">
+
+        <CheckBox
+            android:id="@+id/check_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:clickable="false"
+            android:background="@drawable/remind_switch_selector"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:id="@+id/phone_for_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_toLeftOf="@id/check_open"
+            android:layout_marginRight="8dp">
+            <TextView
+                android:id="@+id/phone_remind_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_remind"
+                android:textColor="@color/black_color"
+                android:layout_toLeftOf="@+id/check_open"
+                android:textSize="@dimen/text_size_small"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hang_up"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <View
+            android:layout_below="@id/phone_for_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+
+
+    </RelativeLayout>
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/ring_attion"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/delay_remind_text"-->
+        <!--android:textSize="@dimen/text_size_small"-->
+        <!--android:layout_below="@id/switch_the_ring_button_new"-->
+        <!--android:layout_marginTop="16dp"/>-->
+
+    <RelativeLayout
+        android:id="@+id/choose_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/switch_the_ring_button_new"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/remind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_the_remind_time"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black_color"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/pull_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pull_conner"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/delay_data_show"
+            android:layout_toRightOf="@id/remind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:gravity="right"
+            android:layout_toLeftOf="@id/pull_icon"
+            android:textColor="@color/direct_text_color"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_color_transparent"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>

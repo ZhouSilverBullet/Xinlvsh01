@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".slide.settinga.SettingActivity"
+    android:background="@color/White_forme">
+
+    <RelativeLayout
+        android:id="@+id/head_bar_for_setting"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/care_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon_new"
+            android:padding="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/black_color"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/setting_title_div"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/head_bar_for_setting"
+        android:background="@color/grey_color_dark"/>
+
+
+    <RadioGroup
+        android:id="@+id/left_bar_for_setting"
+        android:layout_below="@id/setting_title_div"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/clock_for_remind"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/settings_icon_selector"
+            android:paddingLeft="18dp"
+            android:background="@drawable/settings_background_selector" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+
+        <RadioButton
+            android:id="@+id/phone_for_remind"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/setting_ring_selector"
+            android:paddingLeft="18dp"
+            android:background="@drawable/settings_background_selector"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+        <RadioButton
+            android:id="@+id/sms_for_remind"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/setting_msg_selector"
+            android:paddingLeft="18dp"
+            android:background="@drawable/settings_background_selector"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+        <RadioButton
+            android:id="@+id/sit_for_remind"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/seting_sit_selector"
+            android:paddingLeft="18dp"
+            android:background="@drawable/settings_background_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+        <RadioButton
+            android:id="@+id/heart_for_warning"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/heart_icon_selector"
+            android:paddingLeft="18dp"
+            android:background="@drawable/settings_background_selector"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+        <RadioButton
+            android:id="@+id/remind_for_lost"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/setting_lost_selector"
+            android:paddingLeft="18dp"
+            android:background="@drawable/settings_background_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+        <RadioButton
+            android:id="@+id/remind_for_sos"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/hand_up_selector"
+            android:paddingLeft="18dp"
+            android:background="@drawable/settings_background_selector"/>
+
+        <View
+            android:id="@+id/remind_div"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color_transparent"/>
+
+        <RadioButton
+            android:id="@+id/broact_for_remind"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_device_menu_selector"
+            android:paddingLeft="22dp"
+            android:visibility="invisible"
+            android:background="@drawable/settings_background_selector"/>
+
+        <View
+            android:id="@+id/broact_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="invisible"
+            android:background="@color/black_color_transparent"/>
+        <RadioButton
+            android:id="@+id/phone_for_sos"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@mipmap/sos_phone"
+            android:paddingLeft="18dp"
+            android:visibility="invisible"
+            android:background="@drawable/settings_background_selector" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/viewPager_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/setting_title_div"
+        android:layout_toRightOf="@id/left_bar_for_setting"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@id/left_bar_for_setting"
+        android:background="@color/grey_color_dark"
+        android:layout_below="@id/setting_title_div"/>
+
+
+</RelativeLayout>

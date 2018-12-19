@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 位置移动动画 -->
+        <translate
+            android:fromXDelta="0"
+            android:toXDelta="0"
+            android:fromYDelta="0%p"
+            android:toYDelta="50%p"
+            android:duration="150"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator" />
+
+        <!-- 缩放动画 -->
+        <scale
+
+
+            />
+
+
+</set>

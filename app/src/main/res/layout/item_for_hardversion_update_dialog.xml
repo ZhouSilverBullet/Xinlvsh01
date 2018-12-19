@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/update_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mcu可更新:"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/text_size_small"/>
+
+
+            <TextView
+                android:id="@+id/update_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新说明,新版本新增了电话提醒功能,短信提醒功能,天气预报功能"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@id/update_type"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/aboue_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/update_description"
+                >
+                <TextView
+                    android:id="@+id/update_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前版本:1.0"
+                    android:layout_marginStart="24dp"/>
+                <TextView
+                    android:id="@+id/update_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新版本:1.5"
+                    android:layout_toEndOf="@id/update_current"
+                    android:layout_marginStart="16dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_below="@id/aboue_layout"
+                >
+
+                <TextView
+                    android:id="@+id/update_later"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/be_cancle"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:padding="16dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+
+                <TextView
+                    android:id="@+id/update_now_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_now"
+                    android:layout_marginEnd="24dp"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:padding="16dp"
+                    android:layout_gravity="center_vertical"/>
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layout_two"
+            android:visibility="gone"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/update_type_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/text_size_small"/>
+
+            <LinearLayout
+                android:id="@+id/progress_first"
+                android:layout_below="@id/update_type_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="24dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/not_do_other"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/progress_for_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30%"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+
+
+                <android.support.v4.widget.ContentLoadingProgressBar
+                    android:id="@+id/progress_bar_for_update"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cancle_the_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/be_cancle"
+                android:layout_below="@id/progress_first"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="24dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:padding="8dp"/>
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

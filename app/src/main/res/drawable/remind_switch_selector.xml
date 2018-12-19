@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true"
+        android:drawable="@mipmap/close_remind"
+        android:state_checked="false"/>
+
+    <item android:state_enabled="true"
+          android:drawable="@mipmap/open_remind"
+          android:state_checked="true"/>
+
+    <!--
+
+    <item android:state_enabled="true"
+          android:drawable="@drawable/open_remind"
+          android:state_pressed="true"/>
+
+    <item android:state_enabled="true"
+          android:drawable="@drawable/open_remind"
+          android:state_focused="true"/>
+
+    <item android:state_enabled="true"
+          android:state_selected="true"
+          android:drawable="@drawable/open_remind"/>
+
+          -->
+</selector>

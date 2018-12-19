@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huichenghe.xinlvshuju.slide.LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/login_in_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/White_forme">
+
+        <ImageView
+            android:id="@+id/back_to_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@mipmap/back_icon_new"/>
+
+        <TextView
+            android:id="@+id/title_bar_lo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/black_color"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/div_line_lo"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_color_dark"
+        android:layout_below="@id/login_in_headbar"/>
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+
+    <ScrollView
+        android:id="@+id/login_form_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/div_line_lo">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="56dp">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/icon_login"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/login_activity_icon"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="50dp"-->
+                <!--android:layout_marginBottom="50dp"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:textColorHint="@color/black_color"
+                android:background="@drawable/shope_for_custom_sport_name">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/account_text"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="3dp"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/black_color"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0987654321" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shope_for_custom_sport_name"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="6dp"
+                    android:textColorHint="@color/black_color">
+
+                    <EditText android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionGo"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:padding="3dp"
+                        android:textColor="@color/black_color"
+                        android:layout_marginEnd="10dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/see_users_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:src="@mipmap/see_pwd"
+                    android:gravity="center"
+                    android:textColor="@color/White_forme"
+                    android:visibility="gone"
+                    android:textSize="@dimen/text_size_middle"/>
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forget_the_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_the_pwd"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="16dp"/>
+
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textStyle="bold"
+                android:background="@drawable/shape_for_button"
+                android:textColor="@color/White_forme"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/new_user_start_regist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_user_regist"
+                    android:textColor="@color/colorPrimary"
+                    android:drawablePadding="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/anthor_login"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black_color_transparent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/user_anther_login"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black_color_transparent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anthor_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/qq_login"/>
+
+        <ImageView
+            android:id="@+id/weichart_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/wechart_login"/>
+        <ImageView
+            android:id="@+id/facebook_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@mipmap/facebook_login"/>
+    </LinearLayout>
+
+
+    <include layout="@layout/get_the_password"/>
+</RelativeLayout>

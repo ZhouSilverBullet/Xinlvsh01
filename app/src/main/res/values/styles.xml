@@ -1,0 +1,102 @@
+<resources>
+
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <!-- 关闭时的拇指按钮的颜色 -->
+        <item name="colorSwitchThumbNormal">@color/colorPrimaryDark</item>
+        <!-- witch关闭时的轨迹的颜色  30%这个颜色 -->
+        <item name="android:colorForeground">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. 自定义您的主题在这里-->
+        <item name="colorPrimary">@color/White_forme</item>
+        <item name="colorPrimaryDark">@color/black_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:navigationBarColor">@color/main_background</item>-->
+    </style>
+
+
+    <!-- 设置Activity没有ActivityBar -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="WelcomeTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/welcome</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PromptDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="chooseMoveType" parent="AlertDialog.AppCompat">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="mySizeDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="customSportNameDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="mypopupwindow_anim_style">
+        <!-- 显示的动画 -->
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 隐藏的动画 -->
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+
+    <style name="mypopupwindow_anim_style_left_right">
+        <!-- 显示的动画 -->
+        <item name="android:windowEnterAnimation">@anim/scale_for_popwindow</item>
+        <!-- 隐藏的动画 -->
+        <item name="android:windowExitAnimation">@anim/scale_for_popwindow_hide</item>
+    </style>
+
+    <style name="mypopupwindow_anim_style_center">
+        <!-- 显示的动画 -->
+        <item name="android:windowEnterAnimation">@anim/center_enter_for_popwindow</item>
+        <!-- 隐藏的动画 -->
+        <item name="android:windowExitAnimation">@anim/center_for_popwindow_hide</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="My_spinner_style" parent="Base.ThemeOverlay.AppCompat.Light">
+    </style>
+
+</resources>

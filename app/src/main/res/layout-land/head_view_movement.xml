@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+        <TextView
+            android:id="@+id/movement_str"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:textSize="@dimen/text_size_small_add"
+            android:text="@string/sport_sport"/>
+        <TextView
+            android:id="@+id/movement_hr"
+            android:layout_toRightOf="@id/movement_str"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small_add"
+            android:padding="8dp"
+            android:text="@string/movement_heart_round"/>
+        <TextView
+            android:id="@+id/movement_time_h"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/movement_hr"
+            android:textSize="@dimen/text_size_small_add"
+            android:text="@string/movement_durtion"/>
+        <TextView
+            android:layout_toRightOf="@id/movement_time_h"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small_add"
+            android:text="@string/movement_percentage"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

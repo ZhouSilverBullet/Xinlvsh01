@@ -1,0 +1,66 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_sleep_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_forme"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/take_photo_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_color"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48.5dp"/>
+
+    <com.huichenghe.xinlvshuju.CustomView.Custom_sleep_circle_progress
+        android:id="@+id/sleep_progress_cir"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:circle_background="@color/sleep_progress_background"
+        app:start_progress_color="@color/sleep_progress_start_color"
+        app:end_progress_color="@color/sleep_progress_end_color"
+        app:circle_progress_width="18dp"
+        app:small_text_color="@color/grey_color_dark"
+        />
+
+    <TextView
+        android:id="@+id/target_show_and_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@mipmap/target_new_icon"
+        android:layout_below="@id/sleep_progress_cir"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="8dp"
+        android:text="8h"
+        android:textColor="@color/black_color"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="18dp"
+        android:background="@drawable/shape_target_circle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_for_sleep_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/target_show_and_setting"/>
+
+
+</RelativeLayout>
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

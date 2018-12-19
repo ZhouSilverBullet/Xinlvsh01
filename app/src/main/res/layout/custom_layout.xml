@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/icon_type_l"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@mipmap/medicine"
+        android:layout_margin="12dp"/>
+
+    <TextView
+        android:id="@+id/motion_type"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="肌肉训练"
+        android:layout_toEndOf="@id/icon_type_l"
+        android:layout_toStartOf="@+id/right_la"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginEnd="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/right_la"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/right_enter"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/remind_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:58/18:12"
+            android:layout_gravity="right"
+            />
+
+        <TextView
+            android:id="@+id/remind_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一/周二"
+            android:layout_gravity="end"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/right_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/csv"
+        android:layout_alignParentEnd="true"
+        android:padding="23dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_color_dark"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+</LinearLayout>

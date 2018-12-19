@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_forme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/White_forme">
+        <ImageView
+            android:id="@+id/close_add_times"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon_new"
+            android:padding="16dp"/>
+        <TextView
+            android:id="@+id/save_the_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_small_add"
+            android:text="@string/save_sit_times"
+            android:textColor="@color/black_color"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_middle"
+            android:text="@string/sit_long_remind"
+            android:textColor="@color/black_color"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/save_the_time"
+            android:layout_toRightOf="@id/close_add_times"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_color_dark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/begin_sit_time"
+            android:textColor="@color/black_color_transparent"/>
+        <TextView
+            android:id="@+id/edit_the_begin_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/black_color"
+            android:gravity="center"
+            android:background="@drawable/shape_for_login_layout"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_sit_time"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black_color_transparent"/>
+        <TextView
+            android:id="@+id/edit_the_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/black_color"
+            android:gravity="center"
+            android:background="@drawable/shape_for_login_layout"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color_transparent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_for_login_layout"
+        android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/select_time_durion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/minute_stand_up"
+            android:gravity="center"
+            android:paddingLeft="8dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sit_attion_s"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawableLeft="@mipmap/attion"
+        android:drawablePadding="8dp"/>
+
+
+</LinearLayout>

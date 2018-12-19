@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_delay"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="6秒"-->
+        <!--android:textSize="@dimen/text_size_small"-->
+        <!--android:padding="8dp"/>-->
+
+    <CheckedTextView
+        android:id="@+id/check_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:padding="8dp"
+        android:text="6秒"
+        android:paddingStart="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/checked_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_centerVertical="true"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color_transparent"
+        android:layout_below="@id/check_select"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+</RelativeLayout>

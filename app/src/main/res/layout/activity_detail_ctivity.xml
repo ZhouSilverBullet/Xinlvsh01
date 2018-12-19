@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_forme"
+    tools:context="com.huichenghe.xinlvshuju.expand_activity.Detail_activity">
+
+    <RelativeLayout
+        android:id="@+id/botton_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/global_color"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/provios_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/provios"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_toLeftOf="@+id/day_select"/>
+
+        <TextView
+            android:id="@+id/day_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="10.14 周六"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/White_forme"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/next_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/next"
+            android:layout_centerVertical="true"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_toRightOf="@id/day_select"/>
+
+        <ImageView
+            android:id="@+id/trend_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/main_trend"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/main_share"
+            android:padding="10dp"
+            android:layout_toLeftOf="@id/trend_button"/>
+
+        <ImageView
+            android:id="@+id/close_the_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon_new"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/detail_viewpager"
+       android:layout_below="@id/botton_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</RelativeLayout>

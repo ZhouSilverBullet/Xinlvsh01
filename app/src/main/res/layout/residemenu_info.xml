@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+<RelativeLayout
+    android:id="@+id/head_view_persion_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="16dp">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_icon"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:src="@mipmap/head_portrait" />-->
+
+    <com.huichenghe.xinlvshuju.CustomView.CircleImageView
+        android:id="@+id/image_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:src="@mipmap/head_portrait"
+        android:transitionName="@string/image"/>
+
+    <TextView
+        android:id="@+id/user_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:textColor="@color/black_color"
+        android:layout_marginLeft="100dp"
+        />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_username"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/White_forme"-->
+            <!--android:text="昵称" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_dengji"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:textColor="@color/White_forme"-->
+            <!--android:text="未登录" />-->
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/connect_state_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_nick"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="100dp">
+
+
+        <TextView
+            android:id="@+id/battery_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black_color_transparent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/battery"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/tv_the_connecte_state"
+            android:drawablePadding="8dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_the_connecte_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnected"
+            android:textSize="10sp"
+            android:textColor="@color/black_color_transparent"
+            android:drawableStart="@mipmap/bluetooth"
+            android:drawablePadding="8dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/White_forme"-->
+        <!--android:layout_below="@id/head_view_persion_info"-->
+        <!--android:layout_marginTop="16dp"/>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_the_dayData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView_step"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White_forme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/head_view_layout_all">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="267dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/center_data_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="6dp">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/today_movement"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@mipmap/teget" />-->
+
+                    <ImageView
+                        android:id="@+id/movement_ii"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="28dp"
+                        android:src="@mipmap/movement_icon"
+                        />
+                    <!--android:transitionName="@string/movement_image"-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginStart="112dp"-->
+                    <!--android:layout_marginEnd="26dp">-->
+                    <LinearLayout
+                        android:id="@+id/step_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_above="@+id/line_split"
+                        android:layout_toEndOf="@id/movement_ii"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/step_alls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="40sp"
+                            android:textColor="@color/White_forme"
+                            android:layout_gravity="bottom"
+                            style="@style/Base.TextAppearance.AppCompat.Body1"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/step_simple_one"
+                            android:textSize="16sp"
+                            android:layout_gravity="bottom"
+                            android:singleLine="true"
+                            android:textColor="@color/White_forme"/>
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:id="@+id/line_split"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/main_background"
+                        android:layout_toEndOf="@id/movement_ii"
+                        android:layout_marginEnd="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"/>
+
+
+
+                    <LinearLayout
+                        android:layout_below="@id/line_split"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_toEndOf="@id/movement_ii"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/calorie_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/main_background"
+                            android:textSize="20sp"
+                            android:text="0"
+                            android:gravity="end"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="kcal"
+                            android:textSize="14sp"
+                            android:layout_marginStart="3dp"
+                            android:textColor="@color/main_background"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/main_background"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"/>
+
+
+                        <TextView
+                            android:id="@+id/heart_rate_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textSize="20sp"
+                            android:textColor="@color/heart_rate_color"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bpm"
+                            android:textSize="14sp"
+                            android:layout_marginStart="3dp"
+                            android:textColor="@color/heart_rate_color"/>
+
+
+                    </LinearLayout>
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/target_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/center_data_layout">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/target_settingf"
+                        android:textColor="@color/White_forme"
+                        android:textSize="@dimen/activity_horizontal_margin"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/target_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10000步"
+                        android:textColor="@color/White_forme"
+                        android:textSize="@dimen/activity_horizontal_margin"
+                        android:layout_gravity="center_vertical"/>
+                    <ImageView
+                        android:id="@+id/setting_the_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/edit"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/data_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/data_color"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/movement_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0h00min"
+                            android:textColor="@color/White_forme"
+                            android:textSize="@dimen/text_size_small"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/mileage_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0.00km"
+                            android:textColor="@color/White_forme"
+                            android:textSize="@dimen/text_size_small"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/complete_dergree"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0%"
+                            android:textColor="@color/White_forme"
+                            android:textSize="@dimen/text_size_small"
+                            android:gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/data_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="6dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:src="@mipmap/main_clock"
+                            android:gravity="center_horizontal"/>
+
+                        <ImageView
+                            android:id="@+id/metric_gongli"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/main_km"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@mipmap/main_complete"
+                            android:textSize="16sp"
+                            android:gravity="center_horizontal"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/show_or_hide_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_view_outline_movement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+

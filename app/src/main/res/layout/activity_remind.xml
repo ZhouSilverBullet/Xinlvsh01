@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.huichenghe.xinlvshuju.slide.RemindActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Remind_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_background"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:transitionName="@string/text">
+        </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/setting_remind"
+        android:textColor="@color/White_forme"
+        android:textSize="@dimen/text_size_middle"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/layout_up"
+        android:layout_below="@id/Remind_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18dp"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/phone_icon"
+                android:layout_toLeftOf="@+id/phone_remind_switch"
+                >
+
+
+                <TextView
+                    android:id="@+id/ring_ring"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:text="@string/phone_remind"
+                    android:layout_marginStart="8dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black_color"
+                    android:gravity="center_vertical"
+                    />
+
+
+                <TextView
+                    android:id="@+id/setting_delay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/click_to_setting_the_ring_delay"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <CheckBox
+                android:id="@+id/phone_remind_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/remind_switch_selector"
+                android:layout_marginEnd="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/sms_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/sms_remind"
+                android:layout_marginStart="18dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_toEndOf="@id/sms_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sms_remind"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_small"
+
+                android:textColor="@color/black_color"/>
+
+
+
+            <CheckBox
+                android:id="@+id/sms_remind_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/remind_switch_selector"
+                android:layout_marginEnd="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/hr_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18dp"
+                android:layout_centerVertical="true"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/hr_icon"
+                android:layout_toLeftOf="@+id/hr_remind_switch">
+
+                <TextView
+                    android:id="@+id/hr_remind_text"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:text="@string/heart_reat_remind"
+                    android:layout_marginStart="8dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/black_color"
+                    android:gravity="center_vertical"/>
+
+
+
+                <TextView
+                    android:id="@+id/hr_remind_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/remind_round"
+
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <CheckBox
+                android:id="@+id/hr_remind_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/remind_switch_selector"
+                android:layout_marginEnd="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"/>
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:padding="8dp">
+
+
+            <!--<android.support.v4.widget.ContentLoadingProgressBar-->
+                <!--android:id="@+id/myProgressBar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="18dp"-->
+                <!--style="?android:attr/progressBarStyleSmall"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+            <ImageView
+                android:id="@+id/custom_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/add"
+                android:layout_marginStart="18dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_toEndOf="@id/custom_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/custom_remind"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black_color"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/csv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:padding="12dp"/>
+
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/aaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black_color"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_costum_remind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_up"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_layout_show_remind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

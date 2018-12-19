@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@color/black_color_transparent"
+    android:id="@+id/layout_modify">
+
+    <TextView
+        android:id="@+id/change_persion_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_info"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:textColor="@color/black_color"
+        android:background="@color/White_forme"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color"/>
+
+    <TextView
+        android:id="@+id/change_persion_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_color"
+        android:text="@string/change_pwd"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:background="@color/White_forme"/>
+
+
+    <TextView
+        android:id="@+id/cancle_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_color"
+        android:text="@string/be_cancle"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/White_forme"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="leftViewId" format="reference" />
+        <attr name="rightViewId" format="reference" />
+        <attr name="contentViewId" format="reference" />
+    </declare-styleable>
+
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+    <!-- 自定义圆形头像的自定义属性 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    <!-- 自定义BMI -->
+    <declare-styleable name="Custom_BMI">
+        <attr name="nomale_color" format="color"/>
+        <attr name="less_color" format="color"/>
+        <attr name="much_color" format="color"/>
+    </declare-styleable>
+
+    <!-- 自定义活动进度条 -->
+    <declare-styleable name="StepProgressView">
+        <attr name="text_color" format="color"/>
+        <attr name="progress_color" format="color"/>
+        <attr name="solid_color" format="color"/>
+        <attr name="progress_background" format="color"/>
+        <attr name="posint_img" format="reference"/>
+        <attr name="active_step_img" format="reference"/>
+        <attr name="progress_width" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 自定义睡眠-->
+    <declare-styleable name="Custom_sleep_circle_progress">
+        <attr name="small_text_t_size" format="dimension"/>
+        <attr name="big_text_t_size" format="dimension"/>
+        <attr name="circle_background" format="color"/>
+        <attr name="start_progress_color" format="color"/>
+        <attr name="end_progress_color" format="color"/>
+        <attr name="pointer_icon" format="reference"/>
+        <attr name="circle_progress_width" format="dimension"/>
+        <attr name="small_text_color" format="color"/>
+    </declare-styleable>
+
+    <!-- 自定义运动 -->
+    <declare-styleable name="Custom_movement_progress">
+        <attr name="circle_background_movement" format="color"/>
+        <attr name="progress_background_movement" format="color"/>
+        <attr name="progress_width_movement" format="dimension"/>
+        <attr name="movement_pointer_icon" format="reference"/>
+    </declare-styleable>
+
+    <!-- 自定义柱状图 -->
+    <declare-styleable name="Custom_hisgram_view">
+        <attr name="hisgram_color" format="color"/>
+        <attr name="hisgram_bottom_text_color" format="color"/>
+        <attr name="hisgram_top_text_color" format="color"/>
+        <attr name="hisgram_width_dp" format="dimension"/>
+        <attr name="hisgram_bubble_icon" format="reference"/>
+        <attr name="hisgram_unit_text" format="reference"/>
+        <attr name="space_width" format="dimension"/>
+        <attr name="hint_text_size" format="dimension"/>
+        <attr name="hint_big_text_size" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="Custom_hisgram_view_sleep">
+        <attr name="hisgram_sleep_color" format="color"/>
+        <attr name="hisgram_sleep_bottom_text_color" format="color"/>
+        <attr name="hisgram_sleep_top_text_color" format="color"/>
+        <attr name="hisgram_sleep_width_dp" format="dimension"/>
+        <attr name="hisgram_sleep_bubble_icon" format="reference"/>
+        <attr name="hisgram_sleep_unit_text" format="reference"/>
+        <attr name="space_sleep_width" format="dimension"/>
+        <attr name="hisgram_sleep_deep_color" format="color"/>
+        <attr name="hisgram_sleep_light_color" format="color"/>
+        <attr name="hisgram_sleep_wake_color" format="color"/>
+        <attr name="big_text_hint_sleep" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="Circle_Percentage_View">
+        <attr name="one_color" format="color"/>
+        <attr name="two_color" format="color"/>
+        <attr name="three_color" format="color"/>
+        <attr name="four_color" format="color"/>
+        <attr name="five_color" format="color"/>
+        <attr name="hisgram_width" format="dimension"/>
+        <attr name="hisgram_background" format="color"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="dashImageView">
+        <attr name="lineColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RemoveView">
+
+        <attr name="rightwidth" format="dimension"/>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="BloodPressureView">
+        <attr name="first_line_color" format="color"/>
+        <attr name="second_line_color" format="color"/>
+        <attr name="x_axis_color" format="color"/>
+        <attr name="y_axis_color" format="color"/>
+        <attr name="divide_line_color" format="color"/>
+        <attr name="text_axis" format="color"/>
+        <attr name="other_axis" format="color"/>
+        <attr name="expand_text" format="string"/>
+        <attr name="sysitolic_text" format="string"/>
+        <attr name="big_text_size" format="integer"/>
+        <attr name="small_text_size" format="integer"/>
+        <attr name="line_stoke" format="integer"/>
+        <attr name="pointe_radus" format="dimension"/>
+        <attr name="pointer_small_icon" format="reference"/>
+        <attr name="pointer_big_icon" format="reference"/>
+        <attr name="width_space" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="Custom_circle_loving_care">
+        <attr name="inner_icon" format="reference"/>
+        <attr name="circle_start_color" format="color"/>
+        <attr name="circle_end_color" format="color"/>
+        <attr name="circle_width_attion" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="Custom_attion_step_chart">
+        <attr name="chart_color" format="color"/>
+        <attr name="line_color" format="color"/>
+        <attr name="poniter_icon" format="reference"/>
+        <attr name="x_axis_color_only_show" format="color"/>
+        <attr name="line_width" format="dimension"/>
+        <attr name="blue_bubble_icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Custom_attion_sleep_view">
+        <attr name="attion_deep_color" format="color"/>
+        <attr name="attion_light_color" format="color"/>
+        <attr name="attion_wake_color" format="color"/>
+        <attr name="attion_text_color" format="color"/>
+        <attr name="attion_chart_width" format="dimension"/>
+        <attr name="attion_rec_bubble" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Circle_Imageview">
+        <attr name="circle_color" format="color"/>
+        <attr name="circle_radius" format="dimension"/>
+    </declare-styleable>
+</resources>

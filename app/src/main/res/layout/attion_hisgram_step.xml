@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_step_attion_data">
+
+
+    <LinearLayout
+        android:id="@+id/tuli_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/step_histogram"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/step_count"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_small_add"/>
+    </LinearLayout>
+
+    <com.huichenghe.xinlvshuju.CustomView.Custom_attion_step_chart
+        android:id="@+id/attion_step_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:line_color="@color/grey_color_dark"
+        app:line_width="1dp"
+        app:chart_color="@color/attion_chart_color"
+        app:poniter_icon="@mipmap/small_blood_pointer"
+        app:x_axis_color_only_show="@color/grey_color_dark"
+        app:blue_bubble_icon="@mipmap/blue_bubble"
+        android:layout_below="@id/tuli_step"
+        android:layout_marginTop="16dp"/>
+
+
+
+
+</RelativeLayout>

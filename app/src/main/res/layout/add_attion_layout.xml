@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White_forme">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_text"
+            android:labelFor="@+id/attion_account"
+            android:textSize="@dimen/text_size_small"/>
+
+        <EditText
+            android:id="@+id/attion_account"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:digits="abcdefjhigklmnopqrstuvwxyzABCDEFJHIGKLMNOPQRSTUVWXYZ_0987654321"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday_day"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/attion_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:textColor="@color/black_color"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remarks_name"
+            android:labelFor="@+id/attion_remark"
+            android:textSize="@dimen/text_size_small"/>
+
+        <EditText
+            android:id="@+id/attion_remark"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/be_true_to_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_attion"
+        android:textColor="@color/White_forme"
+        android:gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_for_button"/>
+
+</LinearLayout>

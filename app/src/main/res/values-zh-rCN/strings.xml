@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">原始数据</string>
+    <string name="device_adm">设备管理</string>
+    <string name="setting_remind">提醒设置</string>
+    <string name="about">关于</string>
+    <string name="help">帮助</string>
+    <string name="account">未登录</string>
+    <string name="nickname">昵称</string>
+    <string name="disconnected">未连接</string>
+    <string name="connect_to_device">绑定设备</string>
+    <string name="today_movement">今日活动</string>
+    <string name="target_settingf">目标：</string>
+    <string name="movement_time_total">活跃时间</string>
+    <string name="km_total">km</string>
+    <string name="mile">mile</string>
+    <string name="degre_completion">完成度</string>
+    <string name="movement_detail">运动详情</string>
+    <string name="movement_state">运动状态</string>
+    <string name="movement_active">活跃</string>
+    <string name="calorie_text">kcal</string>
+    <string name="share_text">分享</string>
+    <string name="send_share">发送</string>
+    <string name="trend_week_text">周</string>
+    <string name="trend_month_text">月</string>
+    <string name="target_setting">目标设置</string>
+    <string name="persion_info_text">个人资料</string>
+    <string name="edit_nick_name">请输入昵称</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="enter_available_email">请输入有效邮箱</string>
+    <string name="select_birthday">请选择出生日期</string>
+    <string name="enter_true_height">请输入真实身高</string>
+    <string name="enter_true_weight">请输入真实体重</string>
+    <string name="edit_persion_Info">编辑资料</string>
+    <string name="persion_info_edit_ok">个人资料修改完成</string>
+    <string name="take_photo_action">相机</string>
+    <string name="selecte_from_local">从本地相册选择</string>
+    <string name="cancle">取消</string>
+    <string name="protaril">照片</string>
+    <string name="ble_not_support">当前设备不支持低功耗蓝牙</string>
+    <string name="make_sure">请确定手机蓝牙已打开</string>
+    <string name="close_text">关闭</string>
+    <string name="ble_device_text">蓝牙设备</string>
+    <string name="device_connecte_successful">连接成功</string>
+    <string name="device_connecte_failed">连接失败</string>
+    <string name="year_ago">年前</string>
+    <string name="month_ago">个月前</string>
+    <string name="day_age">天前</string>
+    <string name="today">今天</string>
+    <string name="connecte_the_device">连接</string>
+    <string name="connecte_device_failed">连接失败</string>
+    <string name="device_already_disconnecte">设备已断开</string>
+    <string name="device_already_delete">设备已删除</string>
+    <string name="image">image</string>
+    <string name="movement_image">movement_image</string>
+    <string name="text">text</string>
+    <string name="already_con">已连接</string>
+    <string name="not_onn">未连接</string>
+    <string name="sport_band">Mistep</string>
+    <string name="band_explain">安全，便捷，稳定的一款智能运动APP</string>
+    <string name="app_viersion">软件版本:</string>
+    <string name="hard_version">固件版本:</string>
+    <string name="check_update">检查更新</string>
+    <string name="target_pager_text">根据个人数据，设置相应目标！</string>
+    <string name="sport_target">运动目标</string>
+    <string name="zhengchang">正常</string>
+    <string name="pianshao">偏少</string>
+    <string name="huoyue">活跃</string>
+    <string name="chongzu">充裕</string>
+    <string name="henchongzu">很充足</string>
+    <string name="daren">达人</string>
+    <string name="sleep_target">睡眠目标</string>
+    <string name="sleep_state">睡眠质量</string>
+    <string name="liang_hao">良好</string>
+    <string name="deep_sleep">深睡</string>
+    <string name="light_sleep">浅睡</string>
+    <string name="exit">退出</string>
+    <string name="login">登录</string>
+    <string name="login_out_login_in">注销</string>
+    <string name="account_text">账号</string>
+    <string name="password">密码</string>
+    <string name="forget_pwd">\?</string>
+    <string name="enter_the_your_count">请输入账号：</string>
+    <string name="get_the_password">找回密码</string>
+    <string name="scrolling_date_wheel">请滚动时间轮选择您的生日：</string>
+    <string name="not_null">此项不能为空</string>
+    <string name="nick_name_short_or_long">请正确输入昵称, 长度32个字符以内</string>
+    <string name="height_wrong">身高输入有误，请正确输入</string>
+    <string name="weight_wrong">体重输入有误，请正确输入</string>
+    <string name="email_wrong">邮箱格式错误，请正确输入</string>
+    <string name="phone_remind">来电提醒</string>
+    <string name="sms_remind">短信提醒</string>
+    <string name="heart_reat_remind">心率预警</string>
+    <string name="custom_remind">自定义</string>
+    <string name="remind_round">预警设置</string>
+    <string name="seting_note">根据正常人的心率范围来设置您个人的心率最高心率和最低心率，便于第一时间提醒您!</string>
+    <string name="exable">参考：</string>
+    <string name="normal_round">正常范围</string>
+    <string name="fill_in">填写：</string>
+    <string name="height_hr">最大心率：</string>
+    <string name="lower_hr">最小心率：</string>
+    <string name="enter_the_true_round">请填写合理范围！</string>
+    <string name="open_the_hr_setting">开启</string>
+    <string name="regist_to_login">注册</string>
+    <string name="next_step">下一步</string>
+    <string name="regist_ok">注册成功</string>
+    <string name="regist_falied">注册失败</string>
+    <string name="regist_already_have">此账号已注册</string>
+    <string name="net_wrong">网络连接失败</string>
+    <string name="login_success">登陆成功</string>
+    <string name="login_outtime">登陆超时</string>
+    <string name="login_wrong">用户名或密码错误，请重新输入</string>
+    <string name="persion_info_check">资料校验中…</string>
+    <string name="regist_now">注册中…</string>
+    <string name="modify_persion_info">资料修改中…</string>
+    <string name="modify_persion_ok">修改资料成功</string>
+    <string name="modify_persion_failed">资料修改失败</string>
+    <string name="step_pramas">计步参数成功设置！</string>
+    <string name="danger_text">预警</string>
+    <string name="normal_text">正常</string>
+    <string name="day_heartreat">日间心率曲线图</string>
+    <string name="night_heartreat">夜间心率曲线图</string>
+    <string name="height_heartreat">最高心率:</string>
+    <string name="average_heartreat">平均心率:</string>
+    <string name="average_heartreat_a">平均心率</string>
+    <string name="see_movement">查看事件</string>
+    <string name="walk">徒步</string>
+    <string name="running">跑步</string>
+    <string name="climing">登山</string>
+    <string name="muscle">力量训练</string>
+    <string name="ball">球类运动</string>
+    <string name="aerobic">有氧运动</string>
+    <string name="custon_remind">自定义</string>
+    <string name="choose_movement_type">选择类型</string>
+    <string name="choose_time">时间\u3000\u3000</string>
+    <string name="choose_repeat">重复\u3000\u3000</string>
+    <string name="custom_remind_text">开启闹铃提醒后，设备会在浅睡眠状态下轻微震动唤醒您，您这一天将会更加有活力</string>
+    <string name="sunday">日</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="movement_text">运动</string>
+    <string name="take_medicine">吃药</string>
+    <string name="drink">喝水</string>
+    <string name="sleep_text_choose">睡觉</string>
+    <string name="eat_foot">约会</string>
+    <string name="custom_choose_text">编辑自定义</string>
+    <string name="be_true">确定</string>
+    <string name="be_cancle">取消</string>
+    <string name="remind_name">提醒名称</string>
+    <string name="add_time">添加时间</string>
+    <string name="hour_wheel">时</string>
+    <string name="hour_has_prefix">小时</string>
+    <string name="minute_has_prefix">分钟</string>
+    <string name="minute_wheel">分</string>
+    <string name="week">周</string>
+    <string name="not_connecte">设备未连接</string>
+
+    <string name="sunday_all">周日</string>
+    <string name="tuesday_all">周一</string>
+    <string name="monday_all">周二</string>
+    <string name="wednesday_all">周三</string>
+    <string name="thursday_all">周四</string>
+    <string name="friday_all">周五</string>
+    <string name="saturday_all">周六</string>
+
+    <string name="type_not_null">类型不能为空</string>
+    <string name="time_not_null">时间不能为空</string>
+    <string name="only_once">仅一次</string>
+    <string name="everyday">每天</string>
+    <string name="step_count">步数</string>
+    <string name="calorie_count">热量</string>
+    <string name="calorie_count_a">热量消耗</string>
+    <string name="progress_degree">完成：</string>
+    <string name="share_hint">这一刻的想法…</string>
+    <string name="share_to_where">分享到</string>
+
+    <string name="show_the_histroy_data">选择您要查看的日期：</string>
+
+    <string name="four_hour_han">4h</string>
+    <string name="five_hour_han">5h</string>
+    <string name="six_hour_han">6h</string>
+    <string name="seven_hour_han">7h</string>
+    <string name="eight_hour_han">8h</string>
+    <string name="night_hour_han">9h</string>
+    <string name="ten_hour_han">10h</string>
+    <string name="ele_hour_han">11h</string>
+    <string name="telv_hour_han">12h</string>
+    <string name="outline_sport_detail">离线事件</string>
+    <string name="total_outline_times">总运动时长</string>
+    <string name="sport_sport">运动强度</string>
+    <string name="ci_every_minute">次/分钟</string>
+    <string name="calorie_danwei">Kcal</string>
+    <string name="sport_strength">运动强度</string>
+    <string name="danger_for_outline">预警</string>
+    <string name="not_02_for_outline">无氧</string>
+    <string name="has_02_for_outline">有氧</string>
+    <string name="fat_for_outline">燃脂</string>
+    <string name="warm_up_for_outline">热身</string>
+    <string name="very_height">非常高</string>
+    <string name="nomal_height">高</string>
+    <string name="medium">中</string>
+    <string name="low_grade">低</string>
+    <string name="very_low_grade">非常低</string>
+
+    <string name="completion_target">完成:</string>
+    <string name="max_conviction">最高记录:</string>
+    <string name="average_steps">平均步数</string>
+    <string name="average_calorie">平均热量消耗</string>
+    <string name="average_time">平均时长</string>
+    <string name="average_deep_sleep">平均深睡</string>
+
+    <string name="step_simple_one">steps</string>
+    <string name="wancheng_ci">次</string>
+    <string name="setting">设置</string>
+
+    <string name="setting_failed_not_null">设置失败! 最大和最小心率不能为空</string>
+    <string name="setting_hr_max_falied">设置失败! 最大心率不能大于180</string>
+    <string name="setting_hr_min_falied">设置失败! 最小心率不能小于40</string>
+    <string name="setting_hr_min_falied_not">设置失败! 最小和最大心率不能相等</string>
+    <string name="setting_hr_min_falied_not_reverse">设置失败! 最小心率不能大于最大心率</string>
+    <string name="max">最大</string>
+    <string name="min">最小</string>
+
+    <string name="hr_warning_range">请先设置预警范围!</string>
+    <string name="click_to_setting_the_ring_delay">延时设置</string>
+    <string name="delay_setting">延时设置</string>
+    <string name="delay_remind_text">设置来电未接几秒后再设备震动提醒,可以减少手机就在身边,设备还震动消耗电量.</string>
+
+
+    <string name="choose_the_remind_time">选择来电延时:</string>
+    <string name="choose_result">后再提醒</string>
+    <string name="second">秒</string>
+    <string name="immediate_reminder">立即提醒</string>
+    <string name="not_login">您还未登录</string>
+    <string name="choose_danwei">选择单位</string>
+    <string name="gongzhi">公制</string>
+    <string name="yingzhi">英制</string>
+    <string name="hard_version_already">设备固件是最新版本!</string>
+    <string name="can_update">更新:</string>
+    <string name="current_version">当前:</string>
+    <string name="new_version">新版本:</string>
+    <string name="bracelet_can_update">设备有以下更新:</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">稍后更新</string>
+    <string name="not_do_other">请勿进行其它操作</string>
+    <string name="already_connect">设备已连接,请先断开蓝牙连接</string>
+
+    <string name="update_success">升级成功!</string>
+    <string name="update_failed">升级失败</string>
+
+    <string name="trend_text">趋势</string>
+
+    <string name="has_connect_already">设备已连接,不能同时连接两个设备</string>
+    <string name="send_to_email">新密码已发送到您的邮箱, 请注意查收!</string>
+    <string name="send_to_email_failed">您输入的账号不存在, 请正确输入!</string>
+    <string name="send_to_email_nothave">您设置的邮箱不存在!</string>
+
+    <string name="update_now_plase_layter">正在升级,请稍等!</string>
+
+    <string name="start_download">开始下载</string>
+
+    <string name="hello_blank_fragment">抬腕唤醒</string>
+    <string name="title_activity_edit_persion_info">EditPersionInfoActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in">登陆/注册</string>
+    <string name="enter_text">直接使用</string>
+    <string name="action_sign_in_short">登陆</string>
+    <string name="error_invalid_email">账号长度4~32个字符</string>
+    <string name="error_invalid_password">密码长度6~32个字符</string>
+    <string name="error_field_required">账号不能为空</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    </string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_next_to_login">nextToLoginActivity</string>
+    <string name="title_activity_sub_custon_remind">SubCustonRemindActivity</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">设置</string>
+    <string name="metric_switch">公英制切换</string>
+    <string name="change_info">修改资料</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="confirm_pwd">确认新密码</string>
+    <string name="old_pwd_not_null">请输入正确旧密码</string>
+    <string name="new_pwd_enter">请输入正确新密码,</string>
+    <string name="confirm_the_pwd">请再次输入密码,</string>
+    <string name="double_pwd_not">两次密码不一致</string>
+    <string name="pwd_change_success">密码修改成功!</string>
+    <string name="pwd_failed_the_same">修改失败,新旧密码一样!</string>
+    <string name="pwd_failed_diff">修改失败,两次输入新密码不一致</string>
+
+    <string name="is_not_compatible_version">亲，当前版本不是兼容版本！必须升级</string>
+    <string name="is_latest_version">亲，当前版本已经是最新版本！</string>
+    <string name="factory_settings">清空设备数据</string>
+    <string name="factory_settings_title">清空设备数据设置</string>
+    <string name="factory_settings_remind">将清除设备上的所有数据,确定清除数据?</string>
+
+    <string name="factory_reset_seccess">已清空设备数据!</string>
+    <string name="factory_reset_failed">清空设备数据失败,请重试!</string>
+    <string name="hardware_update">升级中:</string>
+    <string name="download_failed">下载失败！</string>
+    <string name="download_complete">下载完成，请点击安装</string>
+    <string name="download_progress">进度</string>
+    <string name="file_download_failed">文件下载失败！</string>
+
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day_day">日</string>
+
+    <string name="share_success">分享成功</string>
+    <string name="share_failed">分享失败, 请重试!</string>
+    <string name="share_cancle">取消分享</string>
+    <string name="install_qq">请安装QQ!</string>
+    <string name="install_weichat">请安装微信!</string>
+    <string name="install_weibo">请安装微博!</string>
+    <string name="share_now">正在分享</string>
+    <string name="remind_number">提醒数量已达上限!</string>
+
+    <string name="new_version_release">新版本发布</string>
+    <string name="check_new_version">正在检查更新</string>
+    <string name="upgrade_now">正在更新</string>
+    <string name="please_wait">请稍等…</string>
+    <string name="entrue_to_eixt">您确定退出应用?</string>
+    <string name="are_you_true">您确定退出当前账号?</string>
+    <string name="month_simple">月</string>
+
+    <string name="disconnect_device">断开设备</string>
+    <string name="are_you_sure_to_disconnect">你确定断开蓝牙连接?</string>
+
+    <string name="delete_device">删除设备</string>
+    <string name="are_you_sure_to_delete">你确定删除蓝牙设备?</string>
+
+    <string name="refresh_failed">刷新失败, 设备未连接</string>
+
+    <string name="login_failed">登陆失败,请检查网络设置</string>
+
+
+    <string name="find_pwd_wrong">找回失败</string>
+    <string name="setting_failed">设置失败!</string>
+
+    <string name="connect_outoftime">连接超时,请重试或重启蓝牙</string>
+    <string name="connecting_later">设备正在连接,稍等片刻</string>
+
+    <string name="cm_metric">cm</string>
+    <string name="kg_metric">kg</string>
+    <string name="lb_Imperial">lb</string>
+    <string name="inch_Imperial">inch</string>
+
+    <string name="network_disconnect">网络不佳,请稍后再试!</string>
+
+    <string name="login_outtime_failed">登陆超时,请检查网络!</string>
+    <string name="bluetooth_already_open">蓝牙已打开</string>
+    <string name="bluetooth_happened">蓝牙故障</string>
+    <string name="param_wrong">参数不合理</string>
+    <string name="regist_outtime">注册超时</string>
+    <string name="remind_name_to_long">提醒名字过长</string>
+    <string name="bluetooth_has_stop">蓝牙已关闭,尝试重启…</string>
+    <string name="bluetooth_has_stop_now">请打开蓝牙</string>
+    <string name="server_exception">服务器错误，登陆失败!</string>
+
+
+    <!--====================================================================-->
+
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="loving_care">亲情关爱</string>
+    <string name="update_date">更新日期:</string>
+    <string name="clock_add">添加闹铃</string>
+    <string name="info_remind">信息提醒</string>
+    <string name="contact_info">手机短信</string>
+    <string name="qq_frend_info">QQ</string>
+    <string name="weichart_info">微信</string>
+    <string name="facebook_info">Facebook</string>
+    <string name="enable_notification">获取权限</string>
+    <string name="enable_notification_message">确定获取通知信息？</string>
+    <string name="select_test_modle">选择运动模式</string>
+    <string name="edit_sport_name">编辑测试模式</string>
+    <string name="sport_name_not_null">测试模式不能为空</string>
+    <string name="new_user_regist">新用户注册</string>
+    <string name="forget_the_pwd">忘记密码?</string>
+    <string name="user_anther_login">使用第三方登录</string>
+    <string name="new_user_email">邮箱</string>
+    <string name="error_email_not_null">邮箱不能为空</string>
+    <string name="invaldate_email">邮箱格式错误</string>
+    <string name="setting_ok">完成</string>
+    <string name="enter_height_befor">请先输入身高</string>
+    <string name="thin">偏瘦</string>
+    <string name="over_weight">超重</string>
+    <string name="Obesity">肥胖</string>
+    <string name="find_device">找设备</string>
+    <string name="device_shock">让你的设备震动，方便查找</string>
+    <string name="factory_setting_clear_all_data">恢复出厂设置后，所有数据清零</string>
+    <string name="delete_local_data">清空APP数据</string>
+    <string name="search_device">连接设备</string>
+    <string name="device_list">设备列表</string>
+    <string name="cancle_scan">取消搜索</string>
+    <string name="alter">提示</string>
+
+    <string name="device_has_shock">设备正在震动</string>
+    <string name="delete_all_data">您将清除本应用所有历史数据，继续？</string>
+    <string name="heard_rate">心率</string>
+    <string name="fatigue">疲劳</string>
+    <string name="Active_zone">活力</string>
+    <string name="fatigue_zone">疲倦</string>
+    <string name="warning_range">预警范围</string>
+    <string name="max_warning_hr">最大心率</string>
+    <string name="min_warning_hr">最小心率</string>
+    <string name="share_to_other">分享到其他</string>
+    <string name="your_bmi_is">您的BMI = </string>
+    <string name="standard_height">标准体重是:</string>
+    <string name="health_range">标准BMI范围</string>
+    <string name="remind_bmi">为了您的健康，请合理制定饮食习惯！</string>
+    <string name="lose_remind">防丢提醒</string>
+    <string name="sit_long_remind">久坐提醒</string>
+    <string name="sit_attion">为避免打扰您休息，建议久坐提醒避开睡眠时间段</string>
+    <string name="sit_times">久坐提醒时间段</string>
+    <string name="sit_times_add">添加</string>
+    <string name="save_sit_times">保存</string>
+    <string name="begin_sit_time">开始久坐时间</string>
+    <string name="end_sit_time">结束久坐时间</string>
+    <string name="minute_stand_up">分钟</string>
+    <string name="sit_attion_s">开启久坐提醒后，您的设备将增加一定的耗电量</string>
+    <string name="delete_this">删除</string>
+    <string name="less_than">小于</string>
+    <string name="greater_than">大于</string>
+    <string name="minute_up">分钟</string>
+    <string name="sit_remind_count">久坐提醒最多4条</string>
+    <string name="be_sure_delete">您确定删除这条提醒?</string>
+    <string name="start_time_not_null">开始时间不能为空</string>
+    <string name="end_time_not_null">结束时间不能为空</string>
+    <string name="end_can_not_befor_start_time">结束时间不能早于开始时间</string>
+    <string name="end_dengyu_start">结束时间不能等于开始时间</string>
+    <string name="heart_reat_monitor">心率监测</string>
+    <string name="take_photo">遥控拍照</string>
+    <string name="app_service">服务</string>
+    <string name="monitor_frequency">监测频率</string>
+    <string name="fatigue_monitor">疲劳监测模式</string>
+    <string name="install_turter">请安装推特</string>
+    <string name="install_facebook">请安装facebook</string>
+    <string name="grant_success">授权成功</string>
+    <string name="grant_failed">授权失败</string>
+    <string name="freguency_unit">分钟 / 次</string>
+    <string name="time_count">最多可添加6个时间</string>
+    <string name="time_already_has">此时间已存在</string>
+    <string name="movement_count">运动</string>
+    <string name="sleep_count">睡眠</string>
+    <string name="fatigue_count">状态</string>
+    <string name="delete_success">删除成功</string>
+    <string name="birthday_day">生日</string>
+    <string name="remarks_name">备注名称</string>
+    <string name="add_attion">添加关注</string>
+    <string name="attion_accunt_not_null">关注账号不能为空</string>
+    <string name="attion_birtheay_not_null">生日不能为空</string>
+    <string name="remark_not_null">备注名称不能为空</string>
+    <string name="remark_to_long">备注名称不能超过32个字符</string>
+    <string name="add_success">添加关注成功!</string>
+    <string name="add_not_5">关注用户不能超过6个</string>
+    <string name="already_add">该用户已关注</string>
+    <string name="birthday_wrong">生日输入错误</string>
+    <string name="not_add_obj">关注的用户不存在</string>
+    <string name="can_not_add_self">不能关注自己</string>
+    <string name="trend_week_active">周趋势</string>
+    <string name="trend_week_sleep">周睡眠趋势</string>
+    <string name="wake_sleep">清醒</string>
+    <string name="yestoday">昨晚</string>
+    <string name="cancle_attion">取消关注</string>
+    <string name="cancle_attion_obj">取消关注当前好友健康信息？</string>
+    <string name="do_not_have_photo_to_see">没有照片可查看</string>
+    <string name="whatsapp_info">WhatsAPP</string>
+    <string name="twitter_info">Twitter</string>
+    <string name="skype">Skype</string>
+    <string name="hrv">HRV</string>
+    <string name="spo2">SPO2%</string>
+    <string name="hrv_point">HRV</string>
+    <string name="expand_presure">舒张压</string>
+    <string name="systolic_presure">收缩压</string>
+    <string name="danger_note">危险</string>
+    <string name="health_note">健康</string>
+    <string name="danger_more">高危</string>
+    <string name="device_not_support">当前设备不支持此功能</string>
+    <string name="reset_info_permiss">没有提醒？ 请点击这里将权限关闭，然后再打开试一试。</string>
+    <string name="deley_ring_time">延时</string>
+    <string name="hang_up">双击设备屏幕来电拒接</string>
+    <string name="health_width">健康体重</string>
+    <string name="begin_com">Start</string>
+    <string name="movement_heart_round">心率区间</string>
+    <string name="movement_durtion">时长</string>
+    <string name="movement_percentage">百分比</string>
+    <string name="save_movement_data">是否保存运动?</string>
+    <string name="connecting_now">正在连接...</string>
+
+    <string name="change_device">设备类型</string>
+    <string name="device_list_a">设备列表</string>
+    <string name="choose_device_type">请选择设备类型</string>
+    <string name="brachlet">手环</string>
+    <string name="watch">手表</string>
+    <string name="limit">极限</string>
+    <string name="hand_up">抬腕唤醒</string>
+    <string name="standan_blood_value">标准值</string>
+    <string name="connect_falied_please_open_blue">\u30001.设备已开机 \n\u30002.设备未被连接 \n\u30003.设备在可连接范围内（10米以内）</string>
+    <string name="note_connect_timeout">连接超时,请确认:</string>
+    <string name="not_support_this_device">当前设备不支持此功能，请升级设备固件!</string>
+
+    <string name="not_bind">未绑定</string>
+    <string name="bind_device">搜索设备</string>
+    <string name="unbind_device">解绑设备</string>
+    <string name="unbind_device_success">设备已解绑</string>
+    <string name="seach_alter">解绑当前设备，继续?</string>
+    <string name="already_change_state_to_brancelet">设备类型已切换为手环</string>
+    <string name="already_change_state_to_watch">设备类型已切换为手表</string>
+    <string name="current_device_is_brancelet">设备类型已经是手环，无需切换</string>
+    <string name="current_device_is_watch">设备类型已经是手表，无需切换</string>
+    <string name="unbind_current_device">请先解绑当前设备!</string>
+
+
+    <!-- 未翻译内容 -->
+    <string name="regist_faild_account_already_exsise">该账户已存在!</string>
+    <string name="add">添加</string>
+    <string name="third_app">所有应用</string>
+    <string name="openorcloseDeviceUi">选择开关设备功能</string>
+    <string name="loading_now">加载中，请稍等..</string>
+    <string name="calorie_show">卡路里</string>
+    <string name="km_show">里程</string>
+    <string name="sleep_show">睡眠</string>
+    <string name="step_show">步数</string>
+    <string name="hr_show">心率</string>
+    <string name="outLine_show">运动监测</string>
+
+    <string name="bind_device_steps">绑定步骤</string>
+    <string name="first_steps">如何绑定设备？\n \t\t1、第一步：</string>
+    <string name="first_steps_01">打开APP进入设备管理页面，并确认手机蓝牙已打开。</string>
+    <string name="second_steps">\t\t2、第二步：</string>
+    <string name="second_steps_02">确认选择的设备类型与需要绑定的设备是同一类型，如果不是同一类型请到设备类型页面更设备类型(注：绑定了设备要更改设备类型请先解绑设备)</string>
+    <string name="third_steps">\t\t3、第三步：</string>
+    <string name="third_steps_02">点击绑定设备进入连接设备页面，选择设备相对应的设备名进行连接，连接成功后回到设备管理页面。</string>
+    <string name="other_steps">绑定后连接超时如何解决？
+                                    \n1、请确认手机蓝牙是否打开
+                                    \n2、请确认设备是否被其他手机连接，查看设备左上角，如有蓝牙图标则表示设备被连接，请断开连接。
+                                    \n3、连接的时候请点亮设备屏幕，因为设备断开连接熄屏20分钟后就会关闭蓝牙广播。
+                                    \n4、请将设备靠近所需要连接的手机，越近越好。
+                                    \n以上操作若还不能连接成功请重启手机蓝牙或手机</string>
+
+    <string name="info_toasr">这些信息有助于设备采取更准确信息</string>
+    <string name="toask_mark">请输入正确范围，舒张压40-100，收缩压90-180
+</string>
+    <string name="toask_mark_bl">设备未连接</string>
+    <string name="title_one"> 基于PPG的血压监测,因个人体质差异,需要个人基准血压用于校正血流变化与血压的对应关系,首次测时,请输入您的基准血压。</string>
+    <string name="title_two">请先选择一款精确的传统血压计，并将标准的血压值输入下列信息框</string>
+    <string name="title_three">请输入校正血压
+</string>
+    <string name="diastolic_blood_pressure">舒张压
+</string>
+    <string name="systolic_pressure">收缩压</string>
+<string name="title_four">请保持血压手表与APP已连接，填写完成，请立刻用您血压手表测试一次血压，血压校正即完成，后续测量不用再次校正
+</string>
+    <string name="title_five">个人资料界面可修改血压基准值。
+</string>
+    <string name="affirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="These_information">这些信息有助于设备采取更准确信息</string>
+    <string name="Correction_of_blood_pressure">校正血压</string>
+
+    <string name="remind_top_one">请将mistep添加到白名单中</string>
+    <string name="remind_top_two">确保手机能收到通知提醒</string>
+    <string name="remind_top_three">请尝试在安全助手的软件内将mistep</string>
+    <string name="remind_top_four">加入到自启动中</string>
+    <string name="know_l">知道了</string>
+    <string name="notify_read">通知读取权限未开启</string>
+    <string name="notify_read_down">开启后即可使用APP通知提醒</string>
+    <string name="start_o">开启</string>
+    <string name="Notify_the_authority">通知权限</string>
+    <string name="Notify_the_authority_down">没有提醒请重启通知权限</string>
+    <string name="No_longer_remind">不再提醒</string>
+    <string name="open_s">开启</string>
+
+    <string name="add_app_upper_limit">最多可选择10个应用</string>
+
+    <string name="service_connect_failed">服务器连接失败！</string>
+    <string name="blood_show">血压</string>
+    <string name="weather_show">天气</string>
+    <string name="unread_msg_show">未读消息</string>
+    <string name="continue_moni">连续监测</string>
+
+    <string name="confirm_pwd_regist">确认密码</string>
+    <string name="authorization">Authorization</string>
+
+    <string name="buleunopen">蓝牙未开启</string>
+    <string name="datasynchronize">数据同步...</string>
+    <string name="datasynchronizesuce">数据同步成功</string>
+    <string name="datasynchronizefail">数据同步失败</string>
+    <string name="unfinddevice">未找到设备请唤醒设备</string>
+    <string name="confail">连接失败请重启蓝牙</string>
+
+
+</resources>

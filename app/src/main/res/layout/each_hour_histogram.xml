@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:id="@+id/step_each_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/step_and_cal_each_shap">
+
+            <LinearLayout
+                android:id="@+id/active_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movement_state"
+                    android:padding="12dp"
+                    android:textColor="@color/grey_color_dark"/>
+
+                <TextView
+                    android:id="@+id/active_state_ment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pianshao"
+                    android:textColor="@color/black_color"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/div_line_step"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/White_forme"
+                android:layout_below="@id/active_state"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp">
+                <com.huichenghe.xinlvshuju.CustomView.Custom_hisgram_view
+                    android:id="@+id/stpe_show_each_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:hisgram_width_dp="7dp"
+                    app:space_width="7dp"
+                    app:hisgram_color="@color/White_forme"
+                    app:hisgram_bottom_text_color="@color/grey_color_dark"
+                    app:hisgram_top_text_color="@color/black_color"
+                    app:hisgram_unit_text="@string/step_simple_one"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/kcal_each_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/calorie_each_shap">
+
+            <LinearLayout
+                android:id="@+id/active_state_kcal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movement_state"
+                    android:padding="12dp"
+                    android:textColor="@color/grey_color_dark"/>
+
+                <TextView
+                    android:id="@+id/kcal_movement_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pianshao"
+                    android:textColor="@color/black_color"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/div_line_kcal"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/White_forme"
+                android:layout_below="@id/active_state_kcal"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp">
+                <com.huichenghe.xinlvshuju.CustomView.Custom_hisgram_view
+                    android:id="@+id/kcal_show_each_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:hisgram_width_dp="7dp"
+                    app:space_width="7dp"
+                    app:hisgram_color="@color/White_forme"
+                    app:hisgram_bottom_text_color="@color/grey_color_dark"
+                    app:hisgram_top_text_color="@color/black_color"
+                    app:hisgram_unit_text="@string/calorie_text"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/step_count"-->
+            <!--android:textColor="@color/White_forme"-->
+            <!--android:textSize="@dimen/text_size_small"-->
+            <!--android:layout_marginEnd="6dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:drawableLeft="@mipmap/has_focus"-->
+            <!--/>-->
+
+
+        <LinearLayout
+            android:id="@+id/setp_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_toStartOf="@+id/calorie_select"
+            android:layout_marginEnd="8dp">
+            <ImageView
+                android:id="@+id/button_step"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step_count"
+                android:textColor="@color/White_forme"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/calorie_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp">
+            <ImageView
+                android:id="@+id/button_calorie"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calorie_count"
+                android:textColor="@color/White_forme"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

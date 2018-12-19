@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@mipmap/next_to_login_background"
+    tools:context="com.huichenghe.xinlvshuju.slide.LoginActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/hotStart_to_show"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:src="@mipmap/back"-->
+        <!--android:paddingStart="16dp"-->
+        <!--android:paddingEnd="16dp"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:visibility="gone"/>-->
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:src="@mipmap/ic_luncher"/>
+
+        <TextView
+            android:id="@+id/typeface_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:typeface="monospace"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/black_color"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/login_formss"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:background="@drawable/shope_for_custom_sport_name"
+                android:textColor="@color/black_color"/>
+
+            <Button
+                android:id="@+id/regist_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regist_to_login"
+                android:background="@drawable/shope_for_custom_sport_name"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black_color"/>
+
+
+            <RelativeLayout
+                android:id="@+id/direct_enter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/direct_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_text"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/step_histogram"
+                    android:background="@drawable/shape_for_next_enter_now"/>
+                <!--<View-->
+                    <!--android:layout_below="@id/direct_button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:background="@color/step_histogram"-->
+                    <!--android:layout_alignLeft="@id/direct_button"-->
+                    <!--android:layout_alignRight="@id/direct_button"/>-->
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

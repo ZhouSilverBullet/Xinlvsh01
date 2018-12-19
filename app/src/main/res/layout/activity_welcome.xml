@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/welcome"
+    tools:context="com.huichenghe.xinlvshuju.zhy.utils.WelcomeActivity">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/welcome"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/icon_app_name"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_marginTop="80dp"-->
+        <!--android:src="@mipmap/ic_luncher"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_below="@id/icon_app_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/text_size_middle"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:text="@string/app_name"/>-->
+
+</RelativeLayout>

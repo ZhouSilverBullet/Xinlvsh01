@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cancle_show_layout"
+    android:background="@color/black_color_transparent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/choose_layout_movement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/White_forme"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:id="@+id/item_movement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/movement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/movement"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movement_text"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@id/movement"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_small"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_take_medicine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/take_medicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/medicine"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_medicine"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@id/take_medicine"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_small"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/item_drink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/dringk"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drink"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@id/drink"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_small"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <RelativeLayout
+            android:id="@+id/item_sleep"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sleep"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep_text_choose"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/sleep"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/text_size_small" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/item_eat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/eat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/appo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eat_foot"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_small"
+                android:layout_below="@id/eat"
+                android:layout_marginTop="8dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/item_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/custon_edit"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/custom_choose_text"
+                android:layout_below="@id/custom"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="8dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

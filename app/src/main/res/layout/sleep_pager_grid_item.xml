@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/active_grid_item_shape"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/sleep_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/deep_sleep_icon"
+            android:layout_marginStart="24dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/sleep_icon">
+
+
+            <TextView
+                android:id="@+id/update_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="2dp"
+                android:textSize="@dimen/text_size_small"
+                android:text="8888888"/>
+
+
+            <TextView
+                android:id="@+id/under_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small_add"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center"
+                android:text="8888888"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

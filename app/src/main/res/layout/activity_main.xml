@@ -1,0 +1,23 @@
+<com.huichenghe.xinlvshuju.SlidingMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_menu"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/sliding_background"
+    android:scrollbars="none"
+    zhy:rightPadding="100dp" >
+
+    <LinearLayout
+        android:id="@+id/slid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <!-- 侧拉布局 -->
+        <include layout="@layout/layout_menu" />
+        <!-- 主页面布局 -->
+        <include layout="@layout/layout_first_pager"/>
+
+    </LinearLayout>
+
+</com.huichenghe.xinlvshuju.SlidingMenu>

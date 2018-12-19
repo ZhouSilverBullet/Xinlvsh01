@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Xinlvsh01.iml" filepath="$PROJECT_DIR$/Xinlvsh01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bledatacontrol/bledatacontrol.iml" filepath="$PROJECT_DIR$/bledatacontrol/bledatacontrol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicecontrol/servicecontrol.iml" filepath="$PROJECT_DIR$/servicecontrol/servicecontrol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/show_photo/show_photo.iml" filepath="$PROJECT_DIR$/show_photo/show_photo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipelibrary/swipelibrary.iml" filepath="$PROJECT_DIR$/swipelibrary/swipelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_application/test_application.iml" filepath="$PROJECT_DIR$/test_application/test_application.iml" />
+    </modules>
+  </component>
+</project>

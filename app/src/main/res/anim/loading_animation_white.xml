@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item android:drawable="@mipmap/netload01_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload02_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload03_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload04_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload05_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload06_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload07_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload08_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload09_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload10_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload11_white" android:duration="50"/>
+        <item android:drawable="@mipmap/netload12_white" android:duration="50"/>
+    </animation-list>
+
+
+

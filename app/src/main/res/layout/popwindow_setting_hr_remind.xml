@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/White_forme">
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/White_forme">
+
+        <ImageView
+            android:id="@+id/back_button_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon_new"
+            android:layout_centerVertical="true"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/heart_reat_remind"
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_middle"
+            />
+
+        <TextView
+            android:id="@+id/setting_the_warning_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/be_true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small_add"
+            android:textColor="@color/black_color"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seting_note"
+        android:layout_margin="18dp"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/black_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exable"
+        android:layout_marginStart="18dp"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/black_color"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/examble_icon"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/danger_text"
+            android:layout_marginStart="20dp"
+            android:textSize="@dimen/text_size_small_add"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/danger_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textSize="@dimen/text_size_small_add"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/holo_red_light"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_round"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_in"
+        android:layout_marginStart="18dp"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/black_color"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="18dp"
+        android:background="@drawable/shape_circle_conner_show">
+
+        <TextView
+            android:id="@+id/max_hr_name"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/height_hr"
+            android:layout_marginStart="8dp"
+            android:textSize="@dimen/text_size_small_14"
+            android:singleLine="true"
+            android:labelFor="@+id/max_hr_edit"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_color"/>
+
+        <EditText
+            android:id="@+id/max_hr_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_toEndOf="@id/max_hr_name"
+            android:layout_toStartOf="@+id/max_hr_danwei"
+            android:textSize="@dimen/text_size_small"
+            android:inputType="number"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/max_hr_danwei"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="bpm"
+            android:gravity="right"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text_size_small_14"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/shape_circle_conner_show">
+
+        <TextView
+            android:id="@+id/min_hr_name"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/lower_hr"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_small_14"
+            android:labelFor="@+id/min_hr_edit"
+            android:textColor="@color/black_color"/>
+
+        <EditText
+            android:id="@+id/min_hr_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_toStartOf="@+id/min_hr_danwei"
+            android:layout_toEndOf="@id/min_hr_name"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_small"
+            android:background="@null"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/min_hr_danwei"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="bpm"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text_size_small_14"
+            android:gravity="right"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black_color"/>
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginStart="28dp"-->
+        <!--android:layout_marginTop="6dp">-->
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:src="@mipmap/note_icon"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/enter_the_true_round"/>-->
+
+    <!--</LinearLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_the_true_round"
+            android:drawableStart="@mipmap/note_icon"
+            android:layout_marginStart="28dp"
+            android:drawablePadding="8dp"
+            android:padding="8dp"/>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/setting_the_warning_hr"-->
+        <!--android:layout_width="168dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:text="@string/setting"-->
+        <!--android:background="@drawable/shape_for_login_button"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:textSize="@dimen/text_size_small"-->
+        <!--android:textColor="@color/White_forme"/>-->
+
+</LinearLayout>
+
+    <!--</RelativeLayout>-->
+</android.support.v4.widget.NestedScrollView>

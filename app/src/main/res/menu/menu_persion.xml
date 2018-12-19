@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".EditPersionInfoActivity">
+
+        <item
+            android:id="@+id/menu_edit_persion_info"
+            android:orderInCategory="100"
+            android:title="@string/change_info"
+            app:showAsAction="always"
+            android:icon="@mipmap/edit_info" />
+
+
+    <!--<item-->
+        <!--android:id="@+id/menu_edit_persion_info_change_pwd"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/change_pwd"-->
+        <!--app:showAsAction="never"-->
+        <!--/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/menu_edit_persion_info_setting_gongyingzhi"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/metric_switch"-->
+        <!--app:showAsAction="never" />-->
+
+
+</menu>

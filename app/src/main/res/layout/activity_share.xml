@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.huichenghe.xinlvshuju.expand_activity.ShareActivity">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/share_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/main_background"-->
+        <!-->-->
+
+
+
+
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:id="@+id/title_la"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/share_text"
+            android:gravity="center"
+            android:background="@color/White_forme"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_middle"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/back_from_share"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:src="@mipmap/back_icon_new"/>
+    </RelativeLayout>
+
+
+
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edit_the_share_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_la"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:visibility="gone"
+        android:hint="@string/share_hint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/edit_the_share_content"
+        android:layout_marginTop="8dp">
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/content_loading"
+            android:layout_gravity="center"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_shot_screen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/title_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_to_where"
+                android:textSize="@dimen/text_size_middle"
+                android:padding="8dp"/>
+
+            <View
+                android:id="@+id/share_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_color_dark"
+                android:layout_below="@id/title_share"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/share_icon"
+                android:layout_below="@id/share_line"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/share_to_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/black_color_transparent"/>
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/share_to_other"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/black_color_transparent"/>
+            
+            
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

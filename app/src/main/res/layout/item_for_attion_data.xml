@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<com.huichenghe.xinlvshuju.CustomView.RemoveView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:rightwidth="100dp"
+    android:id="@+id/remove_layout"
+    android:layout_margin="6dp"
+    android:background="@drawable/loving_care_shape">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/item_attion_obj"
+        android:background="?android:attr/selectableItemBackground">
+
+        <com.huichenghe.xinlvshuju.CustomView.CircleImageView
+            android:id="@+id/loving_head_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/attion_defalt_head"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/loving_care_right_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/the_loving_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/loving_head_icon">
+
+        <TextView
+            android:id="@+id/loving_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/black_color"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/loving_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_date"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small_add"
+            android:layout_gravity="center_vertical"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/loving_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/sleeping_statess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="@string/sleep_state"/>
+
+            <TextView
+                android:id="@+id/movement_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="@string/movement_state"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:visibility="invisible"
+                android:text="@string/movement_state"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/moving_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="@string/movement_text"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_attion_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancle_attion"
+                android:textColor="@color/White_forme"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.huichenghe.xinlvshuju.CustomView.RemoveView>
+
+</RelativeLayout>

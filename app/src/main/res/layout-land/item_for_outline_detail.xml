@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/to_get_width"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+
+    <ImageView
+        android:id="@+id/movement_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@mipmap/movement_aer"/>
+
+    <TextView
+        android:id="@+id/movement_name"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/text_size_small_14"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/movement_icon"
+        android:text="热身"/>
+
+    <RelativeLayout
+        android:id="@+id/movement_rel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/movement_name"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/movement_heart_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_small_14"
+            android:text="112-555" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_color_dark"
+            android:textSize="10sp"
+            android:text="bmp"
+            android:layout_alignBaseline="@id/movement_heart_round"
+            android:layout_toRightOf="@id/movement_heart_round"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movement_rel_time"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/movement_rel"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/movement_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_small_14"
+            android:text="11"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_color_dark"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/movement_time"
+            android:layout_alignBaseline="@id/movement_time"
+            android:text="min"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/movement_rel_time"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        >
+
+
+        <TextView
+            android:id="@+id/movement_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_small_14"
+            android:text="11"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_color_dark"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/movement_comp"
+            android:layout_alignBaseline="@id/movement_comp"
+            android:text="%"/>
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/sport_state_name"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="28dp"-->
+        <!--android:textSize="@dimen/text_size_small_add"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:lines="2"/>-->
+    <!--<com.huichenghe.xinlvsh01.CustomView.OutlineImageView-->
+        <!--android:id="@+id/sport_state_color"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="28dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_toEndOf="@id/sport_state_name"-->
+        <!--android:layout_toStartOf="@+id/sport_state_time"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/sport_state_time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="28dp"-->
+        <!--android:text="30分钟"-->
+        <!--android:textSize="@dimen/text_size_small"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_marginStart="2dp"-->
+        <!--android:layout_alignParentEnd="true"/>-->
+</RelativeLayout>
+</RelativeLayout>

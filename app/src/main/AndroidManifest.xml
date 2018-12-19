@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huichenghe.xinlvshuju">
+
+    <permission android:name="private.recever.message.info" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="private.recever.message.info" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 控制电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取通话状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取ContentProvider权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 接受短信权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- android:persistent="true" -->
+    <!-- android:supportsRtl="true" -->
+    <application
+        android:name="com.huichenghe.xinlvshuju.mainpack.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_luncher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.huichenghe.xinlvshuju.mainpack.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.DeviceAmdActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.RemindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.expand_activity.Treads.TrendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.expand_activity.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.expand_activity.TargetSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.EditPersionInfoActivity"
+            android:label="@string/title_activity_edit_persion_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <service android:name="com.huichenghe.xinlvshuju.DownloadService" />
+        <service android:name="com.huichenghe.xinlvshuju.mainpack.TimeService" />
+
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.zhy.utils.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huichenghe.xinlvshuju.zhy.utils.nextToLoginActivity"
+            android:label="@string/title_activity_next_to_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+
+        <receiver android:name="com.huichenghe.xinlvshuju.SmsReciver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.huichenghe.xinlvshuju.LocalChangeRecever"
+            android:enabled="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huichenghe.xinlvshuju.MyTimeBrocaset">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huichenghe.xinlvshuju.InfoRemindRecever">
+            <intent-filter android:priority="999">
+                <action android:name="recever_notification_from_listenerservice" />
+                <action android:name="recever_notification_show" />
+                <action android:name="recever_need_connect_save_device" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.settinga.SubCustonRemindActivity"
+            android:label="@string/title_activity_sub_custon_remind"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.expand_activity.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+            如果集成QQ分享，或者使用QQ客户端来进行QQ空间的
+            分享，须要在此处添加一个对ACTION_VIEW事件的过滤器，
+            其中的scheme是“tencent”前缀再开发者应用的加上appId。
+            如果此过滤器不设置，则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent1104977887" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- weixin -->
+        <activity
+            android:name="com.huichenghe.xinlvshuju.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.huichenghe.xinlvshuju.slide.AttionModle.LovingCareActivity" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.settinga.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.zhy.utils.registActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.mainpack.MainBaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.SwipeLibrary.app.SwipeBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.SwipeLibrary.app.SwipeBackPreferenceActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.huichenghe.xinlvshuju.slide.settinga.NotificationMonitor"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter android:priority="1000">
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.HeartReatMonitorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.takePhotoPackage.TakePhotoActivity"
+            android:screenOrientation="portrait" />
+        <!--
+         ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.huichenghe.xinlvshuju.slide.AttionModle.AttionInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.mainpack.Active_detial_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.huichenghe.xinlvshuju.mainpack.SeepDetailActiviey"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.huichenghe.xinlvshuju.slide.Device_List_Activity" />
+        <activity android:name="com.huichenghe.xinlvshuju.appRemind.AllAppActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="covY9GYWvoRx6GoLLt0uqinpfupB7hTW" />
+
+        <activity
+            android:name="com.huichenghe.xinlvshuju.expand_activity.help_bind_device"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.huichenghe.xinlvshuju.UpdataService.UpdateHistoryDataService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

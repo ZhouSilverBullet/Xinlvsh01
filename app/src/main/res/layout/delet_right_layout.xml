@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/delete_movement_active"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/circle_delete_right">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:text="@string/delete_this"
+        android:gravity="center"
+        android:textColor="@color/White_forme"
+        android:textSize="@dimen/text_size_middle"/>
+    </RelativeLayout>

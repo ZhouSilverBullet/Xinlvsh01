@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slide.settinga.SubCustonRemindActivity"
+    tools:showIn="@layout/activity_sub_custon_remind"
+    android:layout_marginTop="?attr/actionBarSize">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/choose_type_img"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/choose_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="@string/choose_movement_type"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_small"/>
+
+        <!--<View-->
+            <!--android:id="@+id/aaaa"-->
+            <!--android:layout_width="0.5dp"-->
+            <!--android:layout_height="@dimen/text_size_small"-->
+            <!--android:background="@color/black_color"-->
+            <!--android:layout_gravity="center_vertical" />-->
+
+
+        <TextView
+            android:id="@+id/show_the_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black_color"
+            android:singleLine="true"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            />
+
+
+        <ImageView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:padding="20dp"
+            android:src="@mipmap/csv"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color"/>
+
+
+    <LinearLayout
+        android:id="@+id/choose_time_img"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/choose_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="@string/choose_time"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_small"/>
+
+        <!--<View-->
+            <!--android:id="@+id/bbbb"-->
+            <!--android:layout_width="0.5dp"-->
+            <!--android:layout_height="@dimen/text_size_small"-->
+            <!--android:background="@color/black_color"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--/>-->
+
+
+        <TextView
+            android:id="@+id/show_the_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black_color"
+            android:singleLine="true"
+            android:gravity="right"
+            />
+
+        <ImageView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:padding="20dp"
+            android:src="@mipmap/csv"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/choose_repeat_img"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+        <TextView
+            android:id="@+id/choose_repeat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="@string/choose_repeat"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_small"/>
+
+            <!--<View-->
+                <!--android:id="@+id/cccc"-->
+                <!--android:layout_width="0.5dp"-->
+                <!--android:layout_height="@dimen/text_size_small"-->
+                <!--android:background="@color/black_color"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--/>-->
+
+
+            <TextView
+                android:id="@+id/show_the_repeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/only_once"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"/>
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:src="@mipmap/right_next"
+                android:layout_weight="0.6"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/week_select"
+            android:layout_below="@+id/choose_repeat_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            >
+            <CheckBox
+                android:id="@+id/sunday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/week_choose_selector"
+                android:button="@null"
+                android:text="@string/sunday"
+                android:textSize="12sp"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                />
+
+            <CheckBox
+                android:id="@+id/tuesday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/week_choose_selector"
+                android:button="@null"
+                android:text="@string/monday"
+                android:textSize="12sp"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+
+            <CheckBox
+                android:id="@+id/monday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/week_choose_selector"
+                android:button="@null"
+                android:text="@string/tuesday"
+                android:textSize="12sp"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                android:layout_marginStart="8dp"
+                />
+
+            <CheckBox
+                android:id="@+id/wednesday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/week_choose_selector"
+                android:button="@null"
+                android:text="@string/wednesday"
+                android:textSize="12sp"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+
+            <CheckBox
+                android:id="@+id/thurday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/week_choose_selector"
+                android:button="@null"
+                android:text="@string/thursday"
+                android:textSize="12sp"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+
+
+            <CheckBox
+                android:id="@+id/saturday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/week_choose_selector"
+                android:button="@null"
+                android:text="@string/friday"
+                android:textSize="12sp"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+
+            <CheckBox
+                android:id="@+id/friday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/week_choose_selector"
+                android:button="@null"
+                android:text="@string/saturday"
+                android:textSize="12sp"
+                android:textColor="@color/White_forme"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color"/>
+
+        <Button
+            android:id="@+id/ok_to_send_custom_remind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/be_true"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/White_forme"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_remind_text"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/choose_type_on_layout"/>
+    <include layout="@layout/custom_time_choose_layout"/>
+
+
+</RelativeLayout>

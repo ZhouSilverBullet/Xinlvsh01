@@ -1,0 +1,135 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/title_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Notify_the_authority_down"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+
+            />
+
+        <ImageButton
+            android:id="@+id/open_remind_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/right"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#aa383535"
+        android:layout_below="@+id/rl_rest"
+        ></View>
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/info_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_rest"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/info_remind"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_middle" />
+
+        <CheckBox
+            android:id="@+id/open_remind_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/remind_switch_selector"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_info"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/info_head"
+        android:background="#aa383535" />
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/sr_fresh"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@id/line_info"-->
+    <!--android:layout_marginBottom="80dp">-->
+
+
+
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <!--<View-->
+    <!--android:id="@+id/line_info1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="115dp"-->
+    <!--android:background="#aa383535" />-->
+
+
+
+    <TextView
+        android:id="@+id/reset_info"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_hudu"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:layout_above="@id/reset_info"/>
+
+    <com.huichenghe.xinlvshuju.views.SwipeMenuRecyclerView
+        android:id="@+id/appChecked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_info"
+        android:layout_above="@id/tv_add"/>
+
+</RelativeLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White_forme"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/back_to_mainactivity"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_icon_new"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:text="跑步"
+            android:singleLine="true"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_middle"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/aver_hr_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/average_heartreat_a"
+                android:textSize="@dimen/text_size_small_14"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/aver_hr_tv"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/average_hr_for_outline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80"
+                    android:textSize="@dimen/text_size_middle"
+                    android:textColor="@color/black_color"
+
+                    />
+
+                <TextView
+                    android:id="@+id/ci_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ci_every_minute"
+                    android:textSize="@dimen/text_size_small_add"
+                    android:layout_toRightOf="@id/average_hr_for_outline"
+                    android:layout_alignBaseline="@id/average_hr_for_outline"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/movement_kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calorie_count_a"
+                android:textSize="@dimen/text_size_small_14"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/movement_kcal"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/calorie_for_outline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300"
+                    android:textSize="@dimen/text_size_middle"
+                    android:textColor="@color/black_color"/>
+
+                <TextView
+                    android:id="@+id/kcal_llll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calorie_danwei"
+                    android:textSize="@dimen/text_size_small_add"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/exercise_icon"-->
+                <!--android:layout_width="26dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/movement_qiangdu"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+
+            <TextView
+                android:id="@+id/movement_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sport_sport"
+                android:textSize="@dimen/text_size_small_14"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/outline_strenth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中"
+                android:textSize="@dimen/text_size_middle"
+                android:textColor="@color/black_color"
+                android:layout_below="@id/movement_state_tv"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.huichenghe.xinlvshuju.CustomView.Circle_Percentage_View
+            android:id="@+id/each_movement_percentage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:hisgram_width="20dp"
+            app:one_color="@color/circle_one_color"
+            app:two_color="@color/circle_two_color"
+            app:three_color="@color/circle_three_color"
+            app:four_color="@color/circle_four_color"
+            app:five_color="@color/circle_five_color"
+            app:hisgram_background="@color/gray_color"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/total_tv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_outline_times"
+            android:textSize="@dimen/text_size_small_14"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginStart="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/total_times_for_outline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3h 50min"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/black_color"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/total_tv"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_for_xinlv_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+</LinearLayout>

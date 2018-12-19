@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".expand_activity.Treads.TrendActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/trend_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/White_forme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <RadioGroup
+            android:id="@+id/button_group"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:background="@mipmap/trend_outline">
+
+            <RadioButton
+                android:id="@+id/button_week"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:button="@null"
+                android:background="@drawable/title_radiobutton_selector"
+                android:textColor="@drawable/text_color_selector"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/trend_week_text"/>
+
+            <RadioButton
+                android:id="@+id/button_month"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:button="@null"
+                android:text="@string/month_simple"
+                android:textColor="@drawable/text_color_selector"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:checked="false"
+                android:background="@drawable/title_radiobutton_right_selector"/>
+        </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/div_trend"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_color_dark"
+        android:layout_below="@id/trend_toolbar"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/trend_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/div_trend"/>
+
+
+
+
+
+
+
+</RelativeLayout>

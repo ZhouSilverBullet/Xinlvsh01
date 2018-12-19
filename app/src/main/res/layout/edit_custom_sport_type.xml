@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/title_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="@dimen/text_size_middle"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/edit_sport_name"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title_a"
+        android:background="@color/black_color_transparent"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edit_custom"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/custom_remind"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shope_for_custom_sport_name"/>
+
+
+    <View
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/button_ok_or_cancle"
+        android:background="@color/black_color_transparent"/>
+
+
+    <LinearLayout
+        android:id="@+id/button_ok_or_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/edit_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/be_true"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black_color_transparent"/>
+
+        <TextView
+            android:id="@+id/edit_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/be_cancle"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

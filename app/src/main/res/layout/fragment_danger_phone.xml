@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hang_up_switch"
+    android:background="?android:attr/selectableItemBackground"
+    tools:context=".slide.settinga.DangerPhoneFragment"
+    >
+
+    <CheckBox
+        android:id="@+id/swich_hang_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:clickable="false"
+        android:background="@drawable/remind_switch_selector"
+        android:layout_marginEnd="16dp"
+        />
+    <TextView
+        android:id="@+id/hang_up_be"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hand_up"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/black_color"
+        android:layout_toLeftOf="@id/swich_hang_up"
+        android:layout_marginRight="8dp"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color_transparent"
+        android:layout_below="@id/hang_up_be"/>
+
+</RelativeLayout>

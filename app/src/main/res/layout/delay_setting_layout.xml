@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White_forme">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/delay_setting"
+            android:textColor="@color/White_forme"
+            android:textSize="@dimen/text_size_middle"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/delay_back_to_window"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@mipmap/back_icon_new"/>
+
+        <TextView
+            android:id="@+id/choose_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/be_true"
+            android:gravity="center"
+            android:textColor="@color/White_forme"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/aabb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delay_remind_text"
+            android:textSize="@dimen/text_size_small"/>
+
+
+        <LinearLayout
+            android:id="@+id/title_setting"
+            android:layout_below="@id/aabb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="38dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_the_remind_time"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/delay_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginStart="12dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_color_transparent"
+            android:layout_below="@id/title_setting"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_for_show_delay_time"
+            android:layout_below="@id/title_setting"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    
+    
+    
+    
+    
+
+</LinearLayout>

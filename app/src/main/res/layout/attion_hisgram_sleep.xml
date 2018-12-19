@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_sleep_attion_data">
+
+    <LinearLayout
+        android:id="@+id/tuli_sleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/deep_sleep"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deep_sleep"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_small_add"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/light_sleep"
+            android:layout_marginLeft="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_sleep"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_small_add"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sober"
+            android:layout_marginLeft="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wake_sleep"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_small_add"/>
+    </LinearLayout>
+
+    <com.huichenghe.xinlvshuju.CustomView.Custom_attion_sleep_view
+        android:id="@+id/attion_sleep_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:attion_deep_color="@color/deep_sleep"
+        app:attion_light_color="@color/light_sleep"
+        app:attion_wake_color="@color/sober"
+        app:attion_text_color="@color/grey_color_dark"
+        app:attion_chart_width="6dp"
+        android:layout_below="@id/tuli_sleep"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

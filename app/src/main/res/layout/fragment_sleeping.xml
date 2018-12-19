@@ -1,0 +1,276 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_the_sleep_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <include layout="@layout/title_bar_layout"
+                  android:id="@+id/title_bar_sleep"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/background_blue_color">
+
+                <!--第一布局-->
+            <RelativeLayout
+                android:id="@+id/head_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_for_sleep_detail">
+
+            <RelativeLayout
+                android:id="@+id/historgram_layout"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/detail_text_data">
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@mipmap/sleep_buttom_icon"-->
+                    <!--android:layout_alignParentBottom="true"/>-->
+
+                <com.huichenghe.xinlvshuju.CustomView.SleepDetaillView
+                    android:id="@+id/zhuzhuangtu_sleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_text_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/above_above"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/deep_sleep_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deep_sleep_state_icon"
+                        android:padding="3dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:id="@+id/deep_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0小时"
+                        android:textColor="@color/black_color"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:gravity="end"
+                        android:layout_toRightOf="@id/deep_sleep_icon"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_color"
+                        android:text="@string/deep_sleep"
+                        android:textSize="@dimen/text_size_small_add"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@id/deep_sleep_icon"
+                        android:layout_below="@id/deep_hour"/>
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/below_below"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/above_above">
+                    <ImageView
+                        android:id="@+id/light_sleep_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/light_sleep_state_icon"
+                        android:padding="3dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/light_sleep__hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_color"
+                        android:layout_gravity="center_vertical"
+                        android:text="0小时"
+                        android:textSize="12sp"
+                        android:gravity="end"
+                        android:layout_toRightOf="@id/light_sleep_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_color"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/text_size_small_add"
+                        android:text="@string/light_sleep"
+                        android:layout_toRightOf="@id/light_sleep_icon"
+                        android:layout_below="@id/light_sleep__hour"/>
+
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/wake_sleep_state_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/above_above">
+                    <ImageView
+                        android:id="@+id/wake_sleep_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/wake_sleep_state_icon"
+                        android:padding="3dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/wake_sleep__hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_color"
+                        android:layout_gravity="center_vertical"
+                        android:text="0小时"
+                        android:textSize="12sp"
+                        android:gravity="end"
+                        android:layout_toRightOf="@id/wake_sleep_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_color"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/text_size_small_add"
+                        android:text="@string/wake_sleep"
+                        android:layout_toRightOf="@id/wake_sleep_icon"
+                        android:layout_below="@id/wake_sleep__hour"/>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--第二布局-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@color/White_forme"
+                    android:layout_below="@+id/refresh_the_sleep_data">
+
+
+                    <LinearLayout
+                        android:id="@+id/heat_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/night_heartreat"
+                            android:textSize="12sp"
+                            android:textColor="@color/black_color_transparent"
+                            android:padding="8dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/max_hr_sleep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/height_heartreat"
+                                android:textSize="10sp"
+                                android:textColor="@color/black_color_transparent"/>
+                            <TextView
+                                android:id="@+id/average_hr_sleep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/average_heartreat"
+                                android:textSize="10sp"
+                                android:textColor="@color/black_color_transparent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.huichenghe.xinlvshuju.CustomView.HeartReatDetailsViewForSleep
+                        android:id="@+id/sleep_hr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/heat_table"/>
+
+                </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

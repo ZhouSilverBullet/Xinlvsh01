@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.huichenghe.xinlvshuju.CustomView.RemoveView
+        android:id="@+id/rimove_layout_for_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightwidth="80dp">
+
+        <LinearLayout
+            android:id="@+id/remind_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <ImageView
+                    android:id="@+id/icon_type_l"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/medicine"
+                    android:layout_marginEnd="8dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/motion_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/icon_type_l"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/icon_type_l"
+                    android:layout_toStartOf="@+id/right_la"
+                    android:layout_marginEnd="8dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_small_14"/>
+
+                <LinearLayout
+                    android:id="@+id/right_la"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toStartOf="@+id/right_enter"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/remind_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17:58/18:12"
+                        android:layout_gravity="right"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:textSize="@dimen/text_size_small_14"/>
+
+                    <TextView
+                        android:id="@+id/remind_repeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="周一/周二"
+                        android:layout_gravity="end"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/right_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/csv"
+                    android:layout_alignParentEnd="true"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingEnd="8dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_color_dark"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/delete_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_light">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_delete"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.huichenghe.xinlvshuju.CustomView.RemoveView>
+
+</RelativeLayout>
+
+
+
